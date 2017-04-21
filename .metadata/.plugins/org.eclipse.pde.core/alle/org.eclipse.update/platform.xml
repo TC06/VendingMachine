@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1491931126351" transient="false" version="3.0">
+<config date="1492768977240" transient="false" version="3.0">
 <site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
 <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature" url="features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.13.1.v20160405-1820/" version="3.13.1.v20160405-1820">
 </feature>
@@ -51,6 +51,8 @@
 </feature>
 <feature id="org.eclipse.emf.ecp.view.compoundcontrol.feature.source" plugin-identifier="org.eclipse.emf.ecp.view.compoundcontrol.model" url="features/org.eclipse.emf.ecp.view.compoundcontrol.feature.source_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
 </feature>
+<feature id="org.pnml.tools.epnk.applications.hlpng.simulator.feature" url="features/org.pnml.tools.epnk.applications.hlpng.simulator.feature_1.1.1/" version="1.1.1">
+</feature>
 <feature id="org.eclipse.emf.codegen.ui" url="features/org.eclipse.emf.codegen.ui_2.8.0.v20160526-0356/" version="2.8.0.v20160526-0356">
 </feature>
 <feature id="org.eclipse.uml2.uml.edit" url="features/org.eclipse.uml2.uml.edit_5.2.0.v20160516-0939/" version="5.2.0.v20160516-0939">
@@ -76,6 +78,8 @@
 <feature id="org.eclipse.gef.source" url="features/org.eclipse.gef.source_3.11.0.201606061308/" version="3.11.0.201606061308">
 </feature>
 <feature id="org.eclipse.emf.cdo.examples.installer.source" url="features/org.eclipse.emf.cdo.examples.installer.source_4.2.300.v20160519-1811/" version="4.2.300.v20160519-1811">
+</feature>
+<feature id="dk.dtu.imm.se.ecno.pn.feature" url="features/dk.dtu.imm.se.ecno.pn.feature_0.3.3/" version="0.3.3">
 </feature>
 <feature id="org.eclipse.emf.ecore.source" url="features/org.eclipse.emf.ecore.source_2.12.0.v20160420-0247/" version="2.12.0.v20160420-0247">
 </feature>
@@ -211,6 +215,8 @@
 </feature>
 <feature id="org.eclipse.mylyn.commons" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons_3.20.0.v20160421-1819/" version="3.20.0.v20160421-1819">
 </feature>
+<feature id="dk.dtu.compute.se.ecno.statespace" url="features/dk.dtu.compute.se.ecno.statespace_0.3.3/" version="0.3.3">
+</feature>
 <feature id="org.eclipse.emf.ecore.editor.source" url="features/org.eclipse.emf.ecore.editor.source_2.12.0.v20160526-0356/" version="2.12.0.v20160526-0356">
 </feature>
 <feature id="org.eclipse.emf.parsley.junit4.feature" url="features/org.eclipse.emf.parsley.junit4.feature_1.0.0.v20160608-1623/" version="1.0.0.v20160608-1623">
@@ -296,6 +302,8 @@
 <feature id="org.eclipse.emf.source" url="features/org.eclipse.emf.source_2.12.0.v20160526-0356/" version="2.12.0.v20160526-0356">
 </feature>
 <feature id="org.eclipse.emf.ecp.e4.feature.source" plugin-identifier="org.eclipse.emf.ecp.ui.e4" url="features/org.eclipse.emf.ecp.e4.feature.source_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
+</feature>
+<feature id="dk.dtu.imm.se.ecno.pn.generator.feature" url="features/dk.dtu.imm.se.ecno.pn.generator.feature_0.3.2/" version="0.3.2">
 </feature>
 <feature id="org.eclipse.emf.parsley.sdk.source" plugin-identifier="org.eclipse.emf.parsley.common" url="features/org.eclipse.emf.parsley.sdk.source_1.0.0.v20160608-1623/" version="1.0.0.v20160608-1623">
 </feature>
@@ -407,6 +415,8 @@
 </feature>
 <feature id="org.eclipse.jdt" url="features/org.eclipse.jdt_3.12.0.v20160606-1100/" version="3.12.0.v20160606-1100">
 </feature>
+<feature id="org.pnml.tools.epnk.experimental.hlpng.labelserialisation" url="features/org.pnml.tools.epnk.experimental.hlpng.labelserialisation_0.2.1/" version="0.2.1">
+</feature>
 <feature id="org.eclipse.emf.common" url="features/org.eclipse.emf.common_2.12.0.v20160420-0247/" version="2.12.0.v20160420-0247">
 </feature>
 <feature id="org.eclipse.emf.validation.ocl" url="features/org.eclipse.emf.validation.ocl_1.10.0.201606071713/" version="1.10.0.201606071713">
@@ -424,6 +434,8 @@
 <feature id="org.eclipse.uml2.uml.source" url="features/org.eclipse.uml2.uml.source_5.2.0.v20160516-0939/" version="5.2.0.v20160516-0939">
 </feature>
 <feature id="org.eclipse.oomph.setup" url="features/org.eclipse.oomph.setup_1.4.0.v20160606-0856/" version="1.4.0.v20160606-0856">
+</feature>
+<feature id="dk.dtu.imm.se.ecno.examples.feature" url="features/dk.dtu.imm.se.ecno.examples.feature_0.3.3/" version="0.3.3">
 </feature>
 <feature id="org.eclipse.uml2.source" url="features/org.eclipse.uml2.source_5.2.0.v20160516-0939/" version="5.2.0.v20160516-0939">
 </feature>
@@ -495,9 +507,13 @@
 </feature>
 <feature id="org.eclipse.rcp.source" url="features/org.eclipse.rcp.source_4.6.0.v20160606-1342/" version="4.6.0.v20160606-1342">
 </feature>
+<feature id="dk.dtu.imm.se.ecno.core.feature" url="features/dk.dtu.imm.se.ecno.core.feature_0.3.3/" version="0.3.3">
+</feature>
 <feature id="org.eclipse.emf.ecp.view.viewproxy.feature.source" plugin-identifier="org.eclipse.emf.ecp.view.viewproxy.model" url="features/org.eclipse.emf.ecp.view.viewproxy.feature.source_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
 </feature>
 <feature id="org.eclipse.emf.query.sdk" url="features/org.eclipse.emf.query.sdk_1.10.0.201606071631/" version="1.10.0.201606071631">
+</feature>
+<feature id="org.pnml.tools.epnk.gui.experimental" url="features/org.pnml.tools.epnk.gui.experimental_0.1.0/" version="0.1.0">
 </feature>
 <feature id="org.eclipse.xsd" url="features/org.eclipse.xsd_2.12.0.v20160526-0356/" version="2.12.0.v20160526-0356">
 </feature>
@@ -545,6 +561,8 @@
 </feature>
 <feature id="org.eclipse.emf.ecp.view.horizontal.feature" plugin-identifier="org.eclipse.emf.ecp.view.horizontal.model" url="features/org.eclipse.emf.ecp.view.horizontal.feature_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
 </feature>
+<feature id="dk.dtu.imm.se.ecno.workflow.feature" url="features/dk.dtu.imm.se.ecno.workflow.feature_1.0.0/" version="1.0.0">
+</feature>
 <feature id="org.eclipse.e4.core.tools.feature" url="features/org.eclipse.e4.core.tools.feature_4.5.100.v20160503-0947/" version="4.5.100.v20160503-0947">
 </feature>
 <feature id="org.eclipse.equinox.p2.rcp.feature.source" url="features/org.eclipse.equinox.p2.rcp.feature.source_1.2.200.v20160606-1311/" version="1.2.200.v20160606-1311">
@@ -567,6 +585,8 @@
 </feature>
 <feature id="org.eclipse.ocl.edit.source" url="features/org.eclipse.ocl.edit.source_5.0.200.v20150611-1921/" version="5.0.200.v20150611-1921">
 </feature>
+<feature id="dk.dtu.imm.se.ecno.eclipse.feature" url="features/dk.dtu.imm.se.ecno.eclipse.feature_0.3.3/" version="0.3.3">
+</feature>
 <feature id="org.eclipse.mylyn.commons.repositories" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.repositories_1.12.0.v20160421-1819/" version="1.12.0.v20160421-1819">
 </feature>
 <feature id="org.pnml.tools.epnk.extensions.basic" url="features/org.pnml.tools.epnk.extensions.basic_1.1.0/" version="1.1.0">
@@ -574,6 +594,8 @@
 <feature id="org.eclipse.emf.ecp.view.viewproxy.feature" plugin-identifier="org.eclipse.emf.ecp.view.viewproxy.model" url="features/org.eclipse.emf.ecp.view.viewproxy.feature_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
 </feature>
 <feature id="org.eclipse.sirius.runtime" plugin-identifier="org.eclipse.sirius" url="features/org.eclipse.sirius.runtime_4.0.0.201605311157/" version="4.0.0.201605311157">
+</feature>
+<feature id="dk.dtu.imm.se.ecno.model.feature" url="features/dk.dtu.imm.se.ecno.model.feature_0.3.3/" version="0.3.3">
 </feature>
 <feature id="org.eclipse.emf.ecp.view.model.controls.feature" plugin-identifier="org.eclipse.emf.ecp.ui.view.editor.controls" url="features/org.eclipse.emf.ecp.view.model.controls.feature_1.9.0.20160606-1526/" version="1.9.0.20160606-1526">
 </feature>

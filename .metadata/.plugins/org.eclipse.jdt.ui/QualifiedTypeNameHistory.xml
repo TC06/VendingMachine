@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="dk.dtu.compute.mbse.petrinet.Arc"/>
-<fullyQualifiedTypeName name="dk.dtu.compute.mbse.petrinet.Node"/>
-<fullyQualifiedTypeName name="org.eclipse.emf.edit.domain.AdapterFactoryEditingDomain"/>
-<fullyQualifiedTypeName name="org.eclipse.emf.edit.domain.EditingDomain"/>
-<fullyQualifiedTypeName name="org.eclipse.emf.transaction.TransactionalEditingDomain"/>
-<fullyQualifiedTypeName name="org.eclipse.emf.transaction.RecordingCommand"/>
-<fullyQualifiedTypeName name="dk.dtu.compute.mbse.petrinet.commands.FireTransitionCommand"/>
-<fullyQualifiedTypeName name="dk.dtu.compute.mbse.yawl.ArcType"/>
-<fullyQualifiedTypeName name="dk.dtu.compute.mbse.yawl.AType"/>
-<fullyQualifiedTypeName name="org.pnml.tools.epnk.pnmlcoremodel.TransitionNode"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>
