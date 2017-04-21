@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pn="http://mbse.compute.dtu.dk/petrinet" xmi:id="_nsvFoB7DEeeQ6coHqasTPA" type="Petrinet" name="second.petrinet_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_nsvssB7DEeeQ6coHqasTPA"/>
+  <element xmi:type="pn:Petrinet" href="second.petrinet#/"/>
+</notation:Diagram>

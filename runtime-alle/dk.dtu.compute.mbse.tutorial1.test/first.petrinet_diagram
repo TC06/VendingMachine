@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pn="http://mbse.compute.dtu.dk/petrinet" xmi:id="_U919kB7DEeeQ6coHqasTPA" type="Petrinet" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_VIS6EB7DEeeQ6coHqasTPA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VIUvQB7DEeeQ6coHqasTPA" type="5001"/>
+    <element xmi:type="pn:Place" href="first.petrinet#//@nodes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VIS6ER7DEeeQ6coHqasTPA"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_VIUvQR7DEeeQ6coHqasTPA" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VIUvQx7DEeeQ6coHqasTPA" type="5002"/>
+    <element xmi:type="pn:Transition" href="first.petrinet#//@nodes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VIUvQh7DEeeQ6coHqasTPA" y="100"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_VIUvRB7DEeeQ6coHqasTPA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VIVWUR7DEeeQ6coHqasTPA" type="5001"/>
+    <element xmi:type="pn:Place" href="first.petrinet#//@nodes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VIVWUB7DEeeQ6coHqasTPA" y="200"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YbRGsB7DEeeQ6coHqasTPA" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YbRtwB7DEeeQ6coHqasTPA" type="5002"/>
+    <element xmi:type="pn:Transition" href="first.petrinet#//@nodes.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YbRGsR7DEeeQ6coHqasTPA" x="141" y="104"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Y2_ZYB7DEeeQ6coHqasTPA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Y3AAcB7DEeeQ6coHqasTPA" type="5001"/>
+    <element xmi:type="pn:Place" href="first.petrinet#//@nodes.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y2_ZYR7DEeeQ6coHqasTPA" x="343" y="97"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_U919kR7DEeeQ6coHqasTPA"/>
+  <element xmi:type="pn:Petrinet" href="first.petrinet#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_VJGyYB7DEeeQ6coHqasTPA" type="4001" source="_VIS6EB7DEeeQ6coHqasTPA" target="_VIUvQR7DEeeQ6coHqasTPA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_VJGyYR7DEeeQ6coHqasTPA" fontName="Segoe UI"/>
+    <element xmi:type="pn:Arc" href="first.petrinet#//@arcs.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VJGyYh7DEeeQ6coHqasTPA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VJ7RwB7DEeeQ6coHqasTPA" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VJ7RwR7DEeeQ6coHqasTPA" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_VJZGQB7DEeeQ6coHqasTPA" type="4001" source="_VIUvQR7DEeeQ6coHqasTPA" target="_VIUvRB7DEeeQ6coHqasTPA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_VJZGQR7DEeeQ6coHqasTPA" fontName="Segoe UI"/>
+    <element xmi:type="pn:Arc" href="first.petrinet#//@arcs.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VJZGQh7DEeeQ6coHqasTPA" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VJ7Rwh7DEeeQ6coHqasTPA" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VJ7Rwx7DEeeQ6coHqasTPA" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZvKXgB7DEeeQ6coHqasTPA" type="4001" source="_YbRGsB7DEeeQ6coHqasTPA" target="_Y2_ZYB7DEeeQ6coHqasTPA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZvKXgR7DEeeQ6coHqasTPA" fontName="Segoe UI"/>
+    <element xmi:type="pn:Arc" href="first.petrinet#//@arcs.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZvKXgh7DEeeQ6coHqasTPA" points="[23, -3, -179, 4]$[205, 13, 3, 20]"/>
+  </edges>
+</notation:Diagram>
