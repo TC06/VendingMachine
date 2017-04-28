@@ -37,3 +37,5 @@ dk.dtu.compute.mbse.petrinet/bin/dk/dtu/compute/mbse/petrinet/util/PetrinetAdapt
 org.pnml.tools.epnk.tutorials.app.pntd.graphics/.classpath
 
 org.pnml.tools.epnk.tutorials.app.simulator/.classpath
+
+dk.dtu.compute.mbse.petrinet.simulator/.classpath
