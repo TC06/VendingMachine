@@ -26,3 +26,14 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+dk.dtu.compute.mbse.petrinet.diagram/.classpath
+
+dk.dtu.compute.mbse.petrinet.editor/.classpath
+
+*.class
+
+dk.dtu.compute.mbse.petrinet/bin/dk/dtu/compute/mbse/petrinet/util/PetrinetAdapterFactory$1.class
+
+org.pnml.tools.epnk.tutorials.app.pntd.graphics/.classpath
+
+org.pnml.tools.epnk.tutorials.app.simulator/.classpath
