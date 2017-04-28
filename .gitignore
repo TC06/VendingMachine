@@ -7,8 +7,8 @@
 # eclipse specific git ignore
 *.pydevproject
 .project
-.metadata/
-runtime-alle/.metadata/
+.metadata
+runtime-alle/.metadata
 bin/**
 tmp/**
 tmp/**/*
