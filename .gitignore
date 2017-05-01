@@ -2,14 +2,14 @@
 *.jar
 *.war
 *.ear
-*.class
+
 
 # eclipse specific git ignore
 *.pydevproject
-.project
+
 .metadata/
 runtime-alle/.metadata/
-bin/**
+
 tmp/**
 tmp/**/*
 *.tmp
@@ -17,8 +17,8 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
-.classpath
-.settings/
+
+
 .loadpath
 
 # External tool builders
@@ -30,7 +30,7 @@ dk.dtu.compute.mbse.petrinet.diagram/.classpath
 
 dk.dtu.compute.mbse.petrinet.editor/.classpath
 
-*.class
+
 
 dk.dtu.compute.mbse.petrinet/bin/dk/dtu/compute/mbse/petrinet/util/PetrinetAdapterFactory$1.class
 
