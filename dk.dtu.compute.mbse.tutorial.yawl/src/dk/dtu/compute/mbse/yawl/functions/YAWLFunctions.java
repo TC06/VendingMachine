@@ -10,18 +10,31 @@ import org.pnml.tools.epnk.pnmlcoremodel.TransitionNode;
 
 import dk.dtu.compute.mbse.yawl.AType;
 import dk.dtu.compute.mbse.yawl.ArcType;
+import dk.dtu.compute.mbse.yawl.PType;
+import dk.dtu.compute.mbse.yawl.PlaceType;
 import dk.dtu.compute.mbse.yawl.TType;
 import dk.dtu.compute.mbse.yawl.Transition;
 import dk.dtu.compute.mbse.yawl.TransitionType;
 
 public class YAWLFunctions {
 
-	/*
-	 * public static CType getType(Place place) { if(place instanceof
-	 * Condition){ Condition condition = (Condition) place; ConditionType type =
-	 * condition.getType(); if(type != null) { return type.getText(); } else {
-	 * return CType.NORMAL; } } else { CType.NORMAL; } }
-	 */
+	
+	public static PType getType(Place place) {
+		if(place instanceof Place) {
+			dk.dtu.compute.mbse.yawl.Place p = (dk.dtu.compute.mbse.yawl.Place) place;
+			PlaceType type = p.getPlacetype();
+			if(type != null) {
+				return type.getText();
+			} 
+			else {
+				return PType.NORMAL;
+			} 
+		} 
+		else {
+			return PType.NORMAL;
+		}
+	}
+	
 
 	public static AType getType(Arc arc) {
 		if (arc.getSource() instanceof TransitionNode) {
@@ -42,6 +55,7 @@ public class YAWLFunctions {
 		return getType(arc).equals(AType.RESET);
 	}
 	
+	/*
 	public static ControlFlowType getJoinType(Transition transition) {
 		FlatAccess flat = FlatAccess.getFlatAccess(NetFunctions.getPetriNet(transition));
 		if(transition instanceof Action && flat != null) {
@@ -57,7 +71,7 @@ public class YAWLFunctions {
 			if(count > 1) {
 				TransitionType joinType = action.getJoinType();
 				if(joinType != null) {
-					if(joinType.getText().equals(TType.XOR)) {
+					if(joinType.getText().equals(TT ype.XOR)) {
 						return ControlFlowType.XOR;
 					}
 					else if(joinType.getText().equals(TType.OR)) {
@@ -72,5 +86,6 @@ public class YAWLFunctions {
 		}
 		return ControlFlowType.NULL;
 	}
+	*/
 
 }

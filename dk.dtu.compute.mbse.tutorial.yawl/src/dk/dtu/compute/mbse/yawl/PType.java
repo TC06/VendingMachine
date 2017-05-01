@@ -15,7 +15,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * <!-- end-user-doc -->
  * @see dk.dtu.compute.mbse.yawl.YawlPackage#getPType()
  * @model
- * @generated
+ * @author Tolga
  */
 public enum PType implements Enumerator {
 	/**
