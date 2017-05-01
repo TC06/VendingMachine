@@ -6,9 +6,12 @@ import java.util.List;
 import org.eclipse.emf.ecore.EClass;
 import org.pnml.tools.epnk.gmf.extensions.graphics.GraphicalExtension;
 import org.pnml.tools.epnk.gmf.extensions.graphics.IArcFigure;
+import org.pnml.tools.epnk.gmf.extensions.graphics.IUpdateableFigure;
 import org.pnml.tools.epnk.pnmlcoremodel.Arc;
+import org.pnml.tools.epnk.pnmlcoremodel.Place;
 
 import dk.dtu.compute.mbse.tutorial.yawl.graphics.figures.YAWLArcFigure;
+import dk.dtu.compute.mbse.tutorial.yawl.graphics.figures.YAWLPlaceFigure;
 import dk.dtu.compute.mbse.yawl.YawlPackage;
 
 /**
@@ -37,6 +40,8 @@ public class YAWLGraphics extends GraphicalExtension {
 		ArrayList<EClass> results = new ArrayList<EClass>();
 		if (netType.equals(YawlPackage.eINSTANCE.getYAWLNet())) {
 			results.add(YawlPackage.eINSTANCE.getArc());
+			results.add(YawlPackage.eINSTANCE.getPlace());
+			
 			// No graphical extension for places
 			// results.add((TechnicalPackage.eINSTANCE.getPlace());
 			// results.add(TechnicalPackage.eINSTANCE.getTransition());
@@ -51,15 +56,15 @@ public class YAWLGraphics extends GraphicalExtension {
 		}
 		return null;
 	}
-
-	/*
-	   No graphical extension for places
-	   
+	
 	@Override
 	public IUpdateableFigure createPlaceFigure(Place place) {
+		if (place instanceof dk.dtu.compute.mbse.yawl.Place) {
+			return new YAWLPlaceFigure(place);
+		}
 		return null;
 	}
-	*/
+	
 	/*
 	@Override
 	public IUpdateableFigure createTransitionFigure(Transition transition) {
