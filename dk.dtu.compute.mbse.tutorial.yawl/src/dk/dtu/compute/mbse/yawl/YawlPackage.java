@@ -240,6 +240,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.impl.PlaceImpl
 	 * @see mbse.yawl.impl.YawlPackageImpl#getPlace()
 	 * @generated
+	 * @author Tolga
 	 */
 	int ARC = 4;
 
@@ -249,6 +250,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_ID = PnmlcoremodelPackage.ARC__ID;
 
@@ -258,6 +260,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_NAME = PnmlcoremodelPackage.ARC__NAME;
 
@@ -267,6 +270,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TOOLSPECIFIC = PnmlcoremodelPackage.ARC__TOOLSPECIFIC;
 
@@ -276,6 +280,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_GRAPHICS = PnmlcoremodelPackage.ARC__GRAPHICS;
 
@@ -285,6 +290,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_UNKNOWN = PnmlcoremodelPackage.ARC__UNKNOWN;
 
@@ -294,6 +300,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_SOURCE = PnmlcoremodelPackage.ARC__SOURCE;
 
@@ -303,6 +310,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TARGET = PnmlcoremodelPackage.ARC__TARGET;
 
@@ -312,6 +320,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_ARCTYPE = PnmlcoremodelPackage.ARC_FEATURE_COUNT + 0;
 
@@ -321,6 +330,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_FEATURE_COUNT = PnmlcoremodelPackage.ARC_FEATURE_COUNT + 1;
 
@@ -331,6 +341,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.impl.PlaceTypeImpl
 	 * @see mbse.yawl.impl.YawlPackageImpl#getPlaceType()
 	 * @generated
+	 * @author Tolga
 	 */
 	int ARC_TYPE = 5;
 
@@ -340,6 +351,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TYPE__TOOLSPECIFIC = PnmlcoremodelPackage.ATTRIBUTE__TOOLSPECIFIC;
 
@@ -349,6 +361,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TYPE__GRAPHICS = PnmlcoremodelPackage.ATTRIBUTE__GRAPHICS;
 
@@ -358,6 +371,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TYPE__UNKNOWN = PnmlcoremodelPackage.ATTRIBUTE__UNKNOWN;
 
@@ -367,6 +381,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TYPE__TEXT = PnmlcoremodelPackage.ATTRIBUTE_FEATURE_COUNT + 0;
 
@@ -376,6 +391,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int ARC_TYPE_FEATURE_COUNT = PnmlcoremodelPackage.ATTRIBUTE_FEATURE_COUNT + 1;
 
@@ -386,9 +402,13 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.PType
 	 * @see mbse.yawl.impl.YawlPackageImpl#getPType()
 	 * @generated
+	 * @author Tolga
 	 */
 	int ATYPE = 6;
 	
+	/**
+	 * @author Tolga
+	 */
 	int TRANSITION = 7;
 
 	/**
@@ -397,6 +417,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_ID = PnmlcoremodelPackage.TRANSITION__ID;
 
@@ -406,6 +427,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_NAME = PnmlcoremodelPackage.TRANSITION__NAME;
 
@@ -415,6 +437,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TOOLSPECIFIC = PnmlcoremodelPackage.TRANSITION__TOOLSPECIFIC;
 
@@ -424,6 +447,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_GRAPHICS = PnmlcoremodelPackage.TRANSITION__GRAPHICS;
 
@@ -433,6 +457,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_UNKNOWN = PnmlcoremodelPackage.TRANSITION__UNKNOWN;
 
@@ -442,6 +467,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_IN = PnmlcoremodelPackage.TRANSITION__IN;
 
@@ -451,6 +477,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_OUT = PnmlcoremodelPackage.TRANSITION__OUT;
 
@@ -460,11 +487,18 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TRANSITIONTYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 0;
 	
+	/**
+	 * @author Tolga
+	 */
 	int TRANSITION_JOIN_TYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 1;
 	
+	/**
+	 * @author Tolga
+	 */
 	int TRANSITION_SPLIT_TYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 2;
 
 	/**
@@ -473,6 +507,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_FEATURE_COUNT = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 1;
 
@@ -483,6 +518,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.impl.PlaceTypeImpl
 	 * @see mbse.yawl.impl.YawlPackageImpl#getPlaceType()
 	 * @generated
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE = 8;
 
@@ -492,6 +528,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE__TOOLSPECIFIC = PnmlcoremodelPackage.ATTRIBUTE__TOOLSPECIFIC;
 
@@ -501,6 +538,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE__GRAPHICS = PnmlcoremodelPackage.ATTRIBUTE__GRAPHICS;
 
@@ -510,6 +548,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE__UNKNOWN = PnmlcoremodelPackage.ATTRIBUTE__UNKNOWN;
 
@@ -519,6 +558,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE__TEXT = PnmlcoremodelPackage.ATTRIBUTE_FEATURE_COUNT + 0;
 
@@ -528,6 +568,7 @@ public interface YawlPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
+	 * @author Tolga
 	 */
 	int TRANSITION_TYPE_FEATURE_COUNT = PnmlcoremodelPackage.ATTRIBUTE_FEATURE_COUNT + 1;
 
@@ -538,6 +579,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.PType
 	 * @see mbse.yawl.impl.YawlPackageImpl#getPType()
 	 * @generated
+	 * @author Tolga
 	 */
 	int TTYPE = 9;
 
@@ -610,6 +652,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for class '<em>Place</em>'.
 	 * @see mbse.yawl.Place
 	 * @generated
+	 * @author Tolga
 	 */
 	EClass getArc();
 
@@ -621,6 +664,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.Place#getPlacetype()
 	 * @see #getPlace()
 	 * @generated
+	 * @author Tolga
 	 */
 	EReference getArc_Arctype();
 
@@ -631,6 +675,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for class '<em>Place Type</em>'.
 	 * @see mbse.yawl.PlaceType
 	 * @generated
+	 * @author Tolga
 	 */
 	EClass getArcType();
 
@@ -642,6 +687,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.PlaceType#getText()
 	 * @see #getPlaceType()
 	 * @generated
+	 * @author Tolga
 	 */
 	EAttribute getArcType_Text();
 
@@ -652,6 +698,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for enum '<em>PType</em>'.
 	 * @see mbse.yawl.PType
 	 * @generated
+	 * @author Tolga
 	 */
 	EEnum getAType();
 	
@@ -662,6 +709,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for class '<em>Place</em>'.
 	 * @see mbse.yawl.Place
 	 * @generated
+	 * @author Tolga
 	 */
 	EClass getTransition();
 
@@ -676,8 +724,16 @@ public interface YawlPackage extends EPackage {
 	 */
 	EReference getTransition_Transitiontype();
 	
+	/**
+	 * @author Tolga
+	 * @return
+	 */
 	EReference getTransition_SplitType();
 	
+	/**
+	 * @author Tolga
+	 * @return
+	 */
 	EReference getTransition_JoinType();
 
 	/**
@@ -687,6 +743,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for class '<em>Place Type</em>'.
 	 * @see mbse.yawl.PlaceType
 	 * @generated
+	 * @author Tolga
 	 */
 	EClass getTransitionType();
 
@@ -698,6 +755,7 @@ public interface YawlPackage extends EPackage {
 	 * @see mbse.yawl.PlaceType#getText()
 	 * @see #getPlaceType()
 	 * @generated
+	 * @author Tolga
 	 */
 	EAttribute getTransitionType_Text();
 
@@ -708,6 +766,7 @@ public interface YawlPackage extends EPackage {
 	 * @return the meta object for enum '<em>PType</em>'.
 	 * @see mbse.yawl.PType
 	 * @generated
+	 * @author Tolga
 	 */
 	EEnum getTType();
 
@@ -731,6 +790,7 @@ public interface YawlPackage extends EPackage {
 	 * </ul>
 	 * <!-- end-user-doc -->
 	 * @generated
+	 * @author Tolga
 	 */
 	interface Literals {
 		/**
@@ -796,6 +856,7 @@ public interface YawlPackage extends EPackage {
 		 * @see mbse.yawl.impl.PlaceImpl
 		 * @see mbse.yawl.impl.YawlPackageImpl#getPlace()
 		 * @generated
+		 * @author Tolga
 		 */
 		EClass ARC = eINSTANCE.getArc();
 
@@ -804,6 +865,7 @@ public interface YawlPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
+		 * @author Tolga
 		 */
 		EReference ARC__ARCTYPE = eINSTANCE.getArc_Arctype();
 
@@ -814,6 +876,7 @@ public interface YawlPackage extends EPackage {
 		 * @see mbse.yawl.impl.PlaceTypeImpl
 		 * @see mbse.yawl.impl.YawlPackageImpl#getPlaceType()
 		 * @generated
+		 * @author Tolga
 		 */
 		EClass ARC_TYPE = eINSTANCE.getArcType();
 
@@ -822,6 +885,7 @@ public interface YawlPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
+		 * @author Tolga
 		 */
 		EAttribute ARC_TYPE__TEXT = eINSTANCE.getArcType_Text();
 
@@ -832,6 +896,7 @@ public interface YawlPackage extends EPackage {
 		 * @see mbse.yawl.PType
 		 * @see mbse.yawl.impl.YawlPackageImpl#getPType()
 		 * @generated
+		 * @author Tolga
 		 */
 		EEnum ATYPE = eINSTANCE.getAType();
 		
@@ -842,6 +907,7 @@ public interface YawlPackage extends EPackage {
 		 * @see mbse.yawl.impl.PlaceImpl
 		 * @see mbse.yawl.impl.YawlPackageImpl#getPlace()
 		 * @generated
+		 * @author Tolga
 		 */
 		EClass TRANSITION = eINSTANCE.getTransition();
 
@@ -850,6 +916,7 @@ public interface YawlPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
+		 * @author Tolga
 		 */
 		EReference TRANSITION__TRANSITIONTYPE = eINSTANCE.getTransition_Transitiontype();
 
@@ -860,6 +927,7 @@ public interface YawlPackage extends EPackage {
 		 * @see mbse.yawl.impl.PlaceTypeImpl
 		 * @see mbse.yawl.impl.YawlPackageImpl#getPlaceType()
 		 * @generated
+		 * @author Tolga
 		 */
 		EClass TRANSITION_TYPE = eINSTANCE.getTransitionType();
 
@@ -868,6 +936,7 @@ public interface YawlPackage extends EPackage {
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
+		 * @author Tolga
 		 */
 		EAttribute TRANSITION_TYPE__TEXT = eINSTANCE.getTransitionType_Text();
 

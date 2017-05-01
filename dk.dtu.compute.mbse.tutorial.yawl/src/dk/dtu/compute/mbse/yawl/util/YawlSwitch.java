@@ -70,6 +70,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @return the first non-null result returned by a <code>caseXXX</code> call.
 	 * @generated
+	 * @author Tolga
 	 */
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
@@ -195,6 +196,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T caseArc(Arc object) {
 		return null;
@@ -210,6 +212,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T caseArcType(ArcType object) {
 		return null;
@@ -225,6 +228,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T caseTransition(Transition object) {
 		return null;
@@ -240,6 +244,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T caseTransitionType(TransitionType object) {
 		return null;
@@ -330,6 +335,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T caseTransitionNode(TransitionNode object) {
 		return null;
@@ -360,6 +366,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T casePnmlcoremodel_Transition(org.pnml.tools.epnk.pnmlcoremodel.Transition object) {
 		return null;
@@ -375,6 +382,7 @@ public class YawlSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
+	 * @author Tolga
 	 */
 	public T casePnmlcoremodel_Arc(org.pnml.tools.epnk.pnmlcoremodel.Arc object) {
 		return null;

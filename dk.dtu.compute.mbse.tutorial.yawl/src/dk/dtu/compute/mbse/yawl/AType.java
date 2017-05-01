@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @see mbse.yawl.YawlPackage#getPType()
  * @model
  * @generated
+ * @author Tolga
  */
 public enum AType implements Enumerator {
 	/**

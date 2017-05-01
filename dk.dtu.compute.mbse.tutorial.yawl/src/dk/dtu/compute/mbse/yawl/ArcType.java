@@ -19,6 +19,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.Attribute;
  * @see mbse.yawl.YawlPackage#getPlaceType()
  * @model
  * @generated
+ * @author Tolga
  */
 public interface ArcType extends Attribute {
 	/**

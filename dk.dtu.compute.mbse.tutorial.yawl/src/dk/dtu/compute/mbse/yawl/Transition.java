@@ -16,6 +16,7 @@ package dk.dtu.compute.mbse.yawl;
  * @see mbse.yawl.YawlPackage#getPlace()
  * @model
  * @generated
+ * @author Tolga
  */
 public interface Transition extends org.pnml.tools.epnk.pnmlcoremodel.Transition {
 	/**

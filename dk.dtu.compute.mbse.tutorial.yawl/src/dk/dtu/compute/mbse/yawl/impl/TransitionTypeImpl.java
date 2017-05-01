@@ -26,6 +26,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.impl.AttributeImpl;
  * </ul>
  *
  * @generated
+ * @author Tolga
  */
 public class TransitionTypeImpl extends AttributeImpl implements TransitionType {
 	/**

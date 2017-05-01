@@ -54,6 +54,7 @@ public interface YawlFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @return a new object of class '<em>Place</em>'.
 	 * @generated
+	 * @author Tolga
 	 */
 	Arc createArc();
 
@@ -63,6 +64,7 @@ public interface YawlFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @return a new object of class '<em>Place Type</em>'.
 	 * @generated
+	 * @author Tolga
 	 */
 	ArcType createArcType();
 	
@@ -72,6 +74,7 @@ public interface YawlFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @return a new object of class '<em>Place</em>'.
 	 * @generated
+	 * @author Tolga
 	 */
 	Transition createTransition();
 
@@ -81,6 +84,7 @@ public interface YawlFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @return a new object of class '<em>Place Type</em>'.
 	 * @generated
+	 * @author Tolga
 	 */
 	TransitionType createTransitionType();
 
