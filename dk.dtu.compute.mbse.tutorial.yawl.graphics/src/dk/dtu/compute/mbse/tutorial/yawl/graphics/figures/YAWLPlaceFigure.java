@@ -70,7 +70,23 @@ public class YAWLPlaceFigure extends PlaceFigure {
 		graphics.popState();
 		}
 		
-		
+		if(type.equals(PType.FINISH)){
+			graphics.pushState();
+			Display display = Display.getCurrent();
+			Color red = display.getSystemColor(SWT.COLOR_RED);
+			graphics.setBackgroundColor(red);
+			graphics.setLineWidth(1);
+			int x1 = rectangle.x + d1;
+			int y1 = rectangle.y + rectangle.height / 2;
+			int x2 = rectangle.x + d1 + 1;
+			int y2 = rectangle.y + rectangle.height / 2;
+			int x3 = rectangle.x + d1 + 1;
+			int y3 = rectangle.y + rectangle.height / 2;
+			int x4 = rectangle.x + d1 + 1;
+			int y4 = rectangle.x + rectangle.height / 2; 
+			graphics.fillPolygon(new int[] {x1,y1, x2,y2, x3,y3, x4,y4} );
+			graphics.drawPolygon(new int[] {x1,y1, x2,y2, x3,y3, x4,y4} );
+			graphics.popState();
+		}
 	}
-
 }
