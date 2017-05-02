@@ -42,6 +42,7 @@ public class StartEndPlaces extends AbstractModelConstraint {
 					// and number of places that are end places
 					if (content instanceof Condition) {
 						Place condition = (Place) content;
+						PType type = YAWLFunctions.getPlaceType(condition);
 						if (type.equals(PType.START)) {
 							startCount++;
 							if (startCount > 1) {
