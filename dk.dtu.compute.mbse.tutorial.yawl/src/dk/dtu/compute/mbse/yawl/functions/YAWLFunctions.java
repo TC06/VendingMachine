@@ -19,7 +19,7 @@ import dk.dtu.compute.mbse.yawl.TransitionType;
 public class YAWLFunctions {
 
 	
-	public static PType getType(Place place) {
+	public static PType getPlaceType(Place place) {
 		if(place instanceof Place) {
 			dk.dtu.compute.mbse.yawl.Place p = (dk.dtu.compute.mbse.yawl.Place) place;
 			PlaceType type = p.getPlacetype();
@@ -36,7 +36,7 @@ public class YAWLFunctions {
 	}
 	
 
-	public static AType getType(Arc arc) {
+	public static AType getArcType(Arc arc) {
 		if (arc.getSource() instanceof TransitionNode) {
 			return AType.NORMAL;
 		}
@@ -52,7 +52,7 @@ public class YAWLFunctions {
 	}
 
 	public static boolean isResetArc(Arc arc) {
-		return getType(arc).equals(AType.RESET);
+		return getArcType(arc).equals(AType.RESET);
 	}
 	
 	/*

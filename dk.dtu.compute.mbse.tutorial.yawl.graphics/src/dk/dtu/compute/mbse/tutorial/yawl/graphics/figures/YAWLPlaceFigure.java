@@ -26,7 +26,7 @@ public class YAWLPlaceFigure extends PlaceFigure {
 	
 	public YAWLPlaceFigure(Place place) {
 		super(place);
-		type = YAWLFunctions.getType(place);
+		type = YAWLFunctions.getPlaceType(place);
 		
 	}
 
@@ -37,7 +37,7 @@ public class YAWLPlaceFigure extends PlaceFigure {
 	@Override
 	public void update() {
 		PType oldType = type;
-		type = YAWLFunctions.getType(place);
+		type = YAWLFunctions.getPlaceType(place);
 		if (oldType != type) {
 			// only call the repaint() method, when there was a change that has
 			// an effect to the graphical appearance of the transition

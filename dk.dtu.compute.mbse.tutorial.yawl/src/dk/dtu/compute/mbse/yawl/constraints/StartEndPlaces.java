@@ -6,6 +6,7 @@ import org.eclipse.core.runtime.IStatus;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.validation.AbstractModelConstraint;
 import org.eclipse.emf.validation.IValidationContext;
+import org.osgi.service.condpermadmin.Condition;
 import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
 
 import dk.dtu.compute.mbse.yawl.PType;
@@ -39,9 +40,8 @@ public class StartEndPlaces extends AbstractModelConstraint {
 
 					// TODO count number of places that are start places
 					// and number of places that are end places
-					if (content instanceof Place) {
-						Place place = (Place) content;
-						PType type = YAWLFunctions.getType(place);
+					if (content instanceof Condition) {
+						Place condition = (Place) content;
 						if (type.equals(PType.START)) {
 							startCount++;
 							if (startCount > 1) {

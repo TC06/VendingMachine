@@ -22,6 +22,8 @@
             class="dk.dtu.compute.mbse.yawl.YawlPackage"
             genModel="model/yawl.genmodel"/>
    </extension>
+   
+   
    <!-- @author Harun s150366 -->
     <extension
          point="org.eclipse.emf.validation.constraintProviders">
@@ -81,7 +83,7 @@
                  or
                  ( self.source.oclIsKindOf(pnmlcoremodel::TransitionNode) and
                    self.target.oclIsKindOf(pnmlcoremodel::PlaceNode) and
-                   self.type->size() = 0 )
+                   self.arctype->size() = 0 )
                ]]>
             </constraint>
             
@@ -99,9 +101,9 @@
                   name="One start and end place"
                   id="dk.dtu.compute.mbse.yawl.validation.one-start-and-end-place"
                   statusCode="402">
+                  <target class="YAWLNet:http://se.compute.dtu.dk/mbse/yawl"/>
                <!-- TODO the class here needs to refer to Ecore class of the YAWL Petri net type
                     (name and URI of the package separated by a colon) -->
-               <target class="YAWLNet:http://se.compute.dtu.dk/mbse/yawl"/>
                <description>
                   A YAWL net must have one start and end place.
                </description>
