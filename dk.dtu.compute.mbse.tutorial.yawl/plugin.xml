@@ -22,7 +22,7 @@
             class="dk.dtu.compute.mbse.yawl.YawlPackage"
             genModel="model/yawl.genmodel"/>
    </extension>
-   
+   <!-- @author Harun s150366 -->
     <extension
          point="org.eclipse.emf.validation.constraintProviders">
       <constraintProvider
@@ -34,6 +34,7 @@
          <constraints categories="org.pnml.tools.epnk.validation">
             <constraint
                   id="dk.dtu.compute.mbse.yawl.validation.correct-arc-connection"
+                  isEnabledByDefault="true"
                   lang="OCL"
                   mode="Live"
                   name="Arc connection constraint for YAWL nets"
@@ -108,6 +109,7 @@
                   The YAWL net {0} does not have exactly one start place and one end place.
                </message>
             </constraint>
+            
          </constraints>
       </constraintProvider>
    </extension>

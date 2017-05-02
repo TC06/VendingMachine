@@ -19,7 +19,7 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * This is a constraint saying that a YAWL net should have exactly one start
  * place and one end place.
  *
- * @author ekki@dtu.dk
+ * @author Harun s150366
  * @generated NOT
  */
 public class StartEndPlaces extends AbstractModelConstraint {
