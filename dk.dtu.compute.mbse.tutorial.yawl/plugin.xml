@@ -110,6 +110,23 @@
             	</message>
             </constraint>
             
+            <constraint
+            	lang="Java"
+            	class="dk.dtu.compute.mbse.yawl.constraints.StartEndArcs"
+            	severity="ERROR"
+            	mode="Batch"
+            	name="Start places out arcs, end places in arcs"
+            	id="dk.dtu.compute.mbse.yawl.validation.start-out-end-in-arcs"
+            	statusCode="403">
+        		<target class="YAWLNet:http://se.compute.dtu.dk/mbse/yawl"/>
+        		<description>
+            		A YAWL net start place must have out going arcs, and finish place must have in going arcs.
+            	</description>
+            	<message>
+            		The YAWL net {0} does not have out arcs on start places, and in arcs on end places. 
+            	</message>
+            </constraint>
+            
          </constraints>
       </constraintProvider>
    </extension>
