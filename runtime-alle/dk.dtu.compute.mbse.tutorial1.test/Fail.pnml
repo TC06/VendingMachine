@@ -20,6 +20,12 @@
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
             <layoutConstraint xsi:type="notation:Bounds" x="545" y="225" width="-1" height="-1"/>
           </children>
+          <children xsi:type="notation:Shape" visible="true" type="2003" element="t0" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
+            <layoutConstraint xsi:type="notation:Bounds" x="197" y="238" width="-1" height="-1"/>
+          </children>
+          <children xsi:type="notation:Shape" visible="true" type="2003" element="t1" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
+            <layoutConstraint xsi:type="notation:Bounds" x="326" y="238" width="-1" height="-1"/>
+          </children>
           <styles xsi:type="notation:DiagramStyle" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
           <edges visible="true" type="4001" element="a3" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3">
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
@@ -29,13 +35,23 @@
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
             <bendpoints xsi:type="notation:RelativeBendpoints"/>
           </edges>
-          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a0" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints" points="[19, -1, -341, 9]$[351, -28, -9, -18]"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[19, 1, -108, -2]$[122, -17, -5, -20]"/>
           </edges>
-          <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirto" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints" points="[-17, -11, 588, -21]$[-182, -115, 423, -125]$[-352, -53, 253, -63]$[-479, -21, 126, -31]$[-510, -15, 95, -25]$[-586, 4, 19, -6]"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[20, -2, -109, -2]$[123, -20, -6, -20]"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a2" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[20, -3, -84, 10]$[84, -13, -20, 0]"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirto" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[-4, -4, 115, -8]$[-56, -63, 63, -67]$[-112, -4, 7, -8]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.55,0.1)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.825,0.2)"/>
           </edges>
         </diagram>
       </toolspecific>
@@ -76,22 +92,49 @@
       <arc id="a4" source="t2" target="p3">
         <graphics/>
       </arc>
-      <arc id="a1" source="p1" target="p2">
+      <transition id="t0">
+        <graphics>
+          <position x="217.0" y="258.0"/>
+          <dimension x="40.0" y="40.0"/>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <fill color="#ffffff"/>
+        </graphics>
+      </transition>
+      <transition id="t1">
+        <graphics>
+          <position x="346.0" y="258.0"/>
+          <dimension x="40.0" y="40.0"/>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <fill color="#ffffff"/>
+        </graphics>
+      </transition>
+      <arc id="a0" source="p1" target="t0">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="109.0" y="254.0"/>
-          <position x="441.0" y="227.0"/>
+          <position x="109.0" y="256.0"/>
+          <position x="212.0" y="238.0"/>
         </graphics>
       </arc>
-      <arc id="zirto" source="p3" target="p2">
+      <arc id="a1" source="t0" target="t1">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="678.0" y="234.0"/>
-          <position x="513.0" y="130.0"/>
-          <position x="343.0" y="192.0"/>
-          <position x="216.0" y="224.0"/>
-          <position x="185.0" y="230.0"/>
-          <position x="109.0" y="249.0"/>
+          <position x="237.0" y="256.0"/>
+          <position x="340.0" y="238.0"/>
+        </graphics>
+      </arc>
+      <arc id="a2" source="t1" target="p2">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="366.0" y="255.0"/>
+          <position x="430.0" y="245.0"/>
+        </graphics>
+      </arc>
+      <arc id="zirto" source="p3" target="t2">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="691.0" y="241.0"/>
+          <position x="639.0" y="182.0"/>
+          <position x="583.0" y="241.0"/>
         </graphics>
       </arc>
     </page>

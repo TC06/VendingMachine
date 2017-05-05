@@ -8,6 +8,8 @@ import org.eclipse.emf.validation.AbstractModelConstraint;
 import org.eclipse.emf.validation.IValidationContext;
 import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
 
+import dk.dtu.compute.mbse.yawl.AType;
+import dk.dtu.compute.mbse.yawl.Arc;
 import dk.dtu.compute.mbse.yawl.PType;
 import dk.dtu.compute.mbse.yawl.Place;
 import dk.dtu.compute.mbse.yawl.YAWLNet;
@@ -22,29 +24,31 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * @author Harun s150366
  * @generated NOT
  */
-public class StartEndArcs extends AbstractModelConstraint {
+public class SameArcSamePlace extends AbstractModelConstraint {
 
 	public IStatus validate(IValidationContext ctx) {
 		EObject object = ctx.getTarget();
 		if (object instanceof YAWLNet) {
 			EObject container = object.eContainer();
-			
+
 			if (container instanceof PetriNet) {
 				int startCount = 0;
 				int endCount = 0;
 				Iterator<EObject> iterator = container.eAllContents();
-				
+
 				while (iterator.hasNext()) {
 					EObject content = iterator.next();
-					
-					if (content instanceof Place) {
+
+					if (content instanceof Arc) {
+						Arc arc = (Arc) content;
+						AType arctype = YAWLFunctions.getArcType(arc);
 						Place condition = (Place) content;
-						PType type = YAWLFunctions.getPlaceType(condition);
-						
-						if (type.equals(PType.START) && !condition.getIn().isEmpty()) {
+						PType placetype = YAWLFunctions.getPlaceType(condition);
+
+						if (placetype.equals(PType.START) && condition.getOut().contains(arctype)) {
 							startCount++;
 							break;
-						} else if (type.equals(PType.FINISH) && !condition.getOut().isEmpty()) {
+						} else if (placetype.equals(PType.FINISH) && !condition.getOut().isEmpty()) {
 							endCount++;
 							break;
 						}
