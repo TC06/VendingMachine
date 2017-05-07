@@ -19,6 +19,7 @@ package dk.dtu.compute.mbse.yawl;
  * @author Tolga
  */
 public interface Transition extends org.pnml.tools.epnk.pnmlcoremodel.Transition {
+	
 	/**
 	 * Returns the value of the '<em><b>Placetype</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -33,8 +34,8 @@ public interface Transition extends org.pnml.tools.epnk.pnmlcoremodel.Transition
 	 * @model containment="true"
 	 * @generated
 	 */
-	TransitionType getTransitiontype();
-
+	TransitionType getSplitType();
+	
 	/**
 	 * Sets the value of the '{@link mbse.yawl.Place#getPlacetype <em>Placetype</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -43,6 +44,10 @@ public interface Transition extends org.pnml.tools.epnk.pnmlcoremodel.Transition
 	 * @see #getPlacetype()
 	 * @generated
 	 */
-	void setTransitiontype(TransitionType value);
+	void setSplitType(TransitionType value);
+	
+	TransitionType getJoinType();
+	
+	void setJoinType(TransitionType value);
 
 } // Transition

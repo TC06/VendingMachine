@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @author Tolga
  */
 public enum TType implements Enumerator {
+
 	/**
 	 * The '<em><b>NORMAL</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -25,7 +26,17 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	AND(0, "AND", "AND"),
+	NORMAL(0, "NORMAL", "NORMAL"),
+
+	/**
+	 * The '<em><b>NORMAL</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #NORMAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	AND(1, "AND", "AND"),
 
 	/**
 	 * The '<em><b>START</b></em>' literal object.
@@ -35,7 +46,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OR(1, "OR", "OR"),
+	OR(2, "OR", "OR"),
 
 	/**
 	 * The '<em><b>FINISH</b></em>' literal object.
@@ -45,7 +56,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	XOR(2, "XOR", "XOR");
+	XOR(3, "XOR", "XOR");
 
 	/**
 	 * The '<em><b>NORMAL</b></em>' literal value.
@@ -60,7 +71,22 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int AND_VALUE = 0;
+	public static final int NORMAL_VALUE = 0;
+
+	/**
+	 * The '<em><b>NORMAL</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>NORMAL</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #NORMAL
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int AND_VALUE = 1;
 
 	/**
 	 * The '<em><b>START</b></em>' literal value.
@@ -75,7 +101,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int OR_VALUE = 1;
+	public static final int OR_VALUE = 2;
 
 	/**
 	 * The '<em><b>FINISH</b></em>' literal value.
@@ -90,7 +116,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int XOR_VALUE = 2;
+	public static final int XOR_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>PType</b></em>' enumerators.
@@ -99,11 +125,12 @@ public enum TType implements Enumerator {
 	 * @generated
 	 */
 	private static final TType[] VALUES_ARRAY =
-		new TType[] {
-			AND,
-			OR,
-			XOR,
-		};
+			new TType[] {
+					NORMAL,
+					AND,
+					OR,
+					XOR,
+	};
 
 	/**
 	 * A public read-only list of all the '<em><b>PType</b></em>' enumerators.
@@ -159,9 +186,10 @@ public enum TType implements Enumerator {
 	 */
 	public static TType get(int value) {
 		switch (value) {
-			case AND_VALUE: return AND;
-			case OR_VALUE: return OR;
-			case XOR_VALUE: return XOR;
+		case NORMAL_VALUE: return NORMAL;
+		case AND_VALUE: return AND;
+		case OR_VALUE: return OR;
+		case XOR_VALUE: return XOR;
 		}
 		return null;
 	}
@@ -205,7 +233,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 */
 	public int getValue() {
-	  return value;
+		return value;
 	}
 
 	/**
@@ -214,7 +242,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 */
 	public String getName() {
-	  return name;
+		return name;
 	}
 
 	/**
@@ -223,7 +251,7 @@ public enum TType implements Enumerator {
 	 * @generated
 	 */
 	public String getLiteral() {
-	  return literal;
+		return literal;
 	}
 
 	/**
@@ -236,5 +264,5 @@ public enum TType implements Enumerator {
 	public String toString() {
 		return literal;
 	}
-	
+
 } //TType

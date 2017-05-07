@@ -480,26 +480,16 @@ public interface YawlPackage extends EPackage {
 	 * @author Tolga
 	 */
 	int TRANSITION_OUT = PnmlcoremodelPackage.TRANSITION__OUT;
-
+	
 	/**
-	 * The feature id for the '<em><b>Placetype</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
 	 * @author Tolga
 	 */
-	int TRANSITION_TRANSITIONTYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 0;
+	int TRANSITION_SPLIT_TYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 0;
 	
 	/**
 	 * @author Tolga
 	 */
 	int TRANSITION_JOIN_TYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 1;
-	
-	/**
-	 * @author Tolga
-	 */
-	int TRANSITION_SPLIT_TYPE = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Place</em>' class.
@@ -509,7 +499,7 @@ public interface YawlPackage extends EPackage {
 	 * @ordered
 	 * @author Tolga
 	 */
-	int TRANSITION_FEATURE_COUNT = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 1;
+	int TRANSITION_FEATURE_COUNT = PnmlcoremodelPackage.TRANSITION_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link mbse.yawl.impl.PlaceTypeImpl <em>Place Type</em>}' class.
@@ -712,17 +702,6 @@ public interface YawlPackage extends EPackage {
 	 * @author Tolga
 	 */
 	EClass getTransition();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link mbse.yawl.Place#getPlacetype <em>Placetype</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Placetype</em>'.
-	 * @see mbse.yawl.Place#getPlacetype()
-	 * @see #getPlace()
-	 * @generated
-	 */
-	EReference getTransition_Transitiontype();
 	
 	/**
 	 * @author Tolga
@@ -910,7 +889,7 @@ public interface YawlPackage extends EPackage {
 		 * @author Tolga
 		 */
 		EClass TRANSITION = eINSTANCE.getTransition();
-
+		
 		/**
 		 * The meta object literal for the '<em><b>Placetype</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
@@ -918,7 +897,16 @@ public interface YawlPackage extends EPackage {
 		 * @generated
 		 * @author Tolga
 		 */
-		EReference TRANSITION__TRANSITIONTYPE = eINSTANCE.getTransition_Transitiontype();
+		EReference TRANSITION__JOIN_TYPE = eINSTANCE.getTransition_JoinType();
+		
+		/**
+		 * The meta object literal for the '<em><b>Placetype</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 * @author Tolga
+		 */
+		EReference TRANSITION__SPLIT_TYPE = eINSTANCE.getTransition_SplitType();
 
 		/**
 		 * The meta object literal for the '{@link mbse.yawl.impl.PlaceTypeImpl <em>Place Type</em>}' class.

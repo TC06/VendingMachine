@@ -351,21 +351,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 * @author Tolga
 	 */
-	public Adapter createArcNodeAdapter() {
-		return null;
-	}
-	
-	/**
-	 * Creates a new adapter for an object of class '{@link org.pnml.tools.epnk.pnmlcoremodel.PlaceNode <em>Place Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.pnml.tools.epnk.pnmlcoremodel.PlaceNode
-	 * @generated
-	 * @author Tolga
-	 */
 	public Adapter createTransitionNodeAdapter() {
 		return null;
 	}

@@ -45,8 +45,8 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 		getNetAnnotations().setName("A simple YAWL simulator");
 		ApplicationUIManager manager = this.getPresentationManager();
 		manager.addActionHandler(new EnabledTransitionHandler(this));
-		// manager.addActionHandler(new InvolvedArcHandler(this));
-		// manager.addPresentationHandler(new YAWLAnnotationsPresentationHandler());
+		manager.addActionHandler(new InvolvedArcHandler(this));
+		manager.addPresentationHandler(new YAWLAnnotationsPresentationHandler());
 
 		adapter = new NetChangeListener(this);
 		flatAccess.addInvalidationListener(adapter);

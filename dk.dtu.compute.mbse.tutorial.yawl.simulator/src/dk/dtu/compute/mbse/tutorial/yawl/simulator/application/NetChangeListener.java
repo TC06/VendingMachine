@@ -48,6 +48,7 @@ public class NetChangeListener implements Adapter {
 		FlatAccess flatAccess = simulator.getFlatAccess();
 		if (flatAccess != null) {
 			flatAccess.removeInvalidationListener(this);
+			// simulator.flatAccess = null; Denne linje har han...
 		}
 		
 		final String label = name;

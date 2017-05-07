@@ -10,11 +10,8 @@ import org.pnml.tools.epnk.annotations.netannotations.ObjectAnnotation;
 import org.pnml.tools.epnk.applications.ui.IActionHandler;
 import org.pnml.tools.epnk.helpers.NetFunctions;
 import org.pnml.tools.epnk.pnmlcoremodel.TransitionNode;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
 // TODO EnabledTransition should eventually be replaced by your own annotations (Tutorial 8)
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
 
-import dk.dtu.compute.mbse.yawl.Action;
 import dk.dtu.compute.mbse.yawl.Arc;
 //TODO Action is in probably dk.dtu.compute.mbse.yawl.Transition in your cases
 import dk.dtu.compute.mbse.yawl.Transition;
@@ -72,7 +69,7 @@ public class EnabledTransitionHandler implements IActionHandler {
 						}
 					}
 
-
+					// I hans eksempel tilføjer han inactiveInArcs og inactiveOutArcs som parametre
 					return application.fireTransition(transition);
 				}
 			}
