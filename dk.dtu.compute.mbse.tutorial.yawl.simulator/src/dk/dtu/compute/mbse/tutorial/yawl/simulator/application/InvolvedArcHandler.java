@@ -3,9 +3,9 @@ package dk.dtu.compute.mbse.tutorial.yawl.simulator.application;
 import org.eclipse.draw2d.MouseEvent;
 import org.pnml.tools.epnk.annotations.netannotations.ObjectAnnotation;
 import org.pnml.tools.epnk.applications.ui.IActionHandler;
-import org.pnml.tools.epnk.tutorials.app.simulator.application.TechnicalSimulator;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
+
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
 
 /**
  * Action handler dealing with clicks on InvolvedArc annotations. It

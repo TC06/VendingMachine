@@ -82,6 +82,7 @@
       </transition>
       <arc id="a1" source="p1" target="t1">
         <graphics/>
+        <arctype/>
       </arc>
       <arc id="a2" source="t1" target="p2">
         <graphics/>

@@ -2,30 +2,27 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="yawlannotations" nsURI="http://mbse.compute.dtu.dk/yawlannotations"
     nsPrefix="ya">
-  <eClassifiers xsi:type="ecore:EClass" name="YAWLnet">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
-        eType="#//Node" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="arcs" upperBound="-1" eType="#//Arc"
-        containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Marking" eSuperTypes="../../org.pnml.tools.epnk.annotations/model/NetAnnotations.ecore#//ObjectAnnotation ../../org.pnml.tools.epnk.annotations/model/NetAnnotations.ecore#//TextualAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Node">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//Arc"
-        eOpposite="#//Arc/target"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//Arc"
-        eOpposite="#//Arc/source"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EnabledTransition" eSuperTypes="../../org.pnml.tools.epnk.annotations/model/NetAnnotations.ecore#//ObjectAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//InvolvedArc"
+        containment="true" eOpposite="#//InvolvedArc/target"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//InvolvedArc"
+        containment="true" eOpposite="#//InvolvedArc/source"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resolve" eType="#//EnabledTransition"
+        eOpposite="#//EnabledTransition/refs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refs" upperBound="-1" eType="#//EnabledTransition"
+        eOpposite="#//EnabledTransition/resolve"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="enabled" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Arc">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
-        eType="#//Node" eOpposite="#//Node/out"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
-        eType="#//Node" eOpposite="#//Node/in"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InvolvedArc" eSuperTypes="../../org.pnml.tools.epnk.annotations/model/NetAnnotations.ecore#//ObjectAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//EnabledTransition"
+        eOpposite="#//EnabledTransition/in"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//EnabledTransition"
+        eOpposite="#//EnabledTransition/out"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="#//Node"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//Node">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="tokens" upperBound="-1"
-        eType="#//Token" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Token"/>
 </ecore:EPackage>

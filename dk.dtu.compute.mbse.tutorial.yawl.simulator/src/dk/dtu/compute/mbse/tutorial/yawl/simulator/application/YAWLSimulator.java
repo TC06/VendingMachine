@@ -13,11 +13,11 @@ import org.pnml.tools.epnk.pnmlcoremodel.Place;
 import org.pnml.tools.epnk.pnmlcoremodel.PlaceNode;
 import org.pnml.tools.epnk.pnmlcoremodel.RefPlace;
 import org.pnml.tools.epnk.pnmlcoremodel.RefTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.Marking;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsFactory;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.marking.NetMarking;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsFactory;
 import dk.dtu.compute.mbse.yawl.AType;
 import dk.dtu.compute.mbse.yawl.Transition;
 import dk.dtu.compute.mbse.yawl.PType;
@@ -124,13 +124,13 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 			if (object instanceof Transition) {
 				Transition transition = (Transition) object;
 				if (isEnabled(marking, transition)) {
-					EnabledTransition enabledTransition = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
+					EnabledTransition enabledTransition = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
 					enabledTransition.setObject(transition);
 					annotation.getObjectAnnotations().add(enabledTransition);
 					enabledTransition.setEnabled(true);
 
 					for (RefTransition refTransition: getFlatAccess().getRefTransitions(transition)) {
-						EnabledTransition enabledTransition2 = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
+						EnabledTransition enabledTransition2 = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
 						enabledTransition2.setObject(refTransition);
 						enabledTransition2.setResolve(enabledTransition);
 						enabledTransition2.setEnabled(enabledTransition.isEnabled());
@@ -155,13 +155,13 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 
 			int m = marking.getMarking((dk.dtu.compute.mbse.yawl.Place) place);
 			if(m > 0){
-				Marking mAnnotation = TechsimannotationsFactory.eINSTANCE.createMarking();
+				Marking mAnnotation = YawlannotationsFactory.eINSTANCE.createMarking();
 				mAnnotation.setObject(place);
 				mAnnotation.setValue(m);
 				annotation.getObjectAnnotations().add(mAnnotation);
 
 				for(RefPlace refPlace: getFlatAccess().getRefPlaces(place)){
-					Marking mAnnotation2 = TechsimannotationsFactory.eINSTANCE.createMarking();
+					Marking mAnnotation2 = YawlannotationsFactory.eINSTANCE.createMarking();
 					mAnnotation2.setObject(refPlace);
 					mAnnotation2.setValue(m);
 					annotation.getObjectAnnotations().add(mAnnotation2);

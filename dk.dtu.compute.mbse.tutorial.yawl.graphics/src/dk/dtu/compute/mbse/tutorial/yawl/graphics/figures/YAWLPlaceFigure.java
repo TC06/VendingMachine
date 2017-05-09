@@ -22,11 +22,11 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  */
 public class YAWLPlaceFigure extends PlaceFigure {
 
-	private PType type;
+	private PType placeType;
 
 	public YAWLPlaceFigure(Place place) {
 		super(place);
-		type = YAWLFunctions.getPlaceType(place);
+		placeType = YAWLFunctions.getPlaceType(place);
 
 	}
 
@@ -36,9 +36,9 @@ public class YAWLPlaceFigure extends PlaceFigure {
 	 */
 	@Override
 	public void update() {
-		PType oldType = type;
-		type = YAWLFunctions.getPlaceType(place);
-		if (oldType != type) {
+		PType oldType = placeType;
+		placeType = YAWLFunctions.getPlaceType(place);
+		if (oldType != placeType) {
 			// only call the repaint() method, when there was a change that has
 			// an effect to the graphical appearance of the transition
 			this.repaint();
@@ -53,7 +53,7 @@ public class YAWLPlaceFigure extends PlaceFigure {
 		int d1 = rectangle.width / 3;
 		int d2 = rectangle.height / 3;
 
-		if (type.equals(PType.START)) {
+		if (placeType.equals(PType.START)) {
 			graphics.pushState();
 			Display display = Display.getCurrent();
 			Color green = display.getSystemColor(SWT.COLOR_GREEN);
@@ -70,7 +70,7 @@ public class YAWLPlaceFigure extends PlaceFigure {
 			graphics.popState();
 		}
 
-		else if (type.equals(PType.FINISH)) {
+		else if (placeType.equals(PType.FINISH)) {
 			graphics.pushState();
 			Display display = Display.getCurrent();
 			Color red = display.getSystemColor(SWT.COLOR_RED);

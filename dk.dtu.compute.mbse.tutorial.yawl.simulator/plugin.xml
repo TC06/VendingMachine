@@ -16,7 +16,7 @@
       <!-- @generated yawlannotations -->
       <package
             uri="http://mbse.compute.dtu.dk/yawlannotations"
-            class="dk.dtu.compute.mbse.tutorial.yawl.yawlannotations.YawlannotationsPackage"
+            class="dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage"
             genModel="model/yawlannotations.genmodel"/>
    </extension>
 

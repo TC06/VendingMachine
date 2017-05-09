@@ -2,20 +2,24 @@ package dk.dtu.compute.mbse.tutorial.yawl.graphics.figures;
 
 import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.geometry.Rectangle;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.widgets.Display;
 import org.pnml.tools.epnk.gmf.extensions.graphics.figures.TransitionFigure;
 import org.pnml.tools.epnk.pnmlcoremodel.Place;
+import org.pnml.tools.epnk.pnmlcoremodel.Transition;
+
 import dk.dtu.compute.mbse.yawl.PType;
 import dk.dtu.compute.mbse.yawl.TType;
-import dk.dtu.compute.mbse.yawl.Transition;
 import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
 
 public class YAWLTransitionFigure extends TransitionFigure {
 
-	private TType[] types;
+	private TType[] transitionType;
 
 	public YAWLTransitionFigure(Transition transition) {
 		super(transition);
-		types = YAWLFunctions.getTransitionType(transition);
+		transitionType = YAWLFunctions.getTransitionType(transition);
 	}
 
 	/**
@@ -24,9 +28,9 @@ public class YAWLTransitionFigure extends TransitionFigure {
 	 */
 	@Override
 	public void update() {
-		TType[] oldTypes = types;
-		types = YAWLFunctions.getTransitionType(transition);
-		if (oldTypes[0] != types[0] || oldTypes[1] != types[1]) {
+		TType[] oldTypes = transitionType;
+		transitionType = YAWLFunctions.getTransitionType(transition);
+		if (oldTypes[0] != transitionType[0] || oldTypes[1] != transitionType[1]) {
 			// only call the repaint() method, when there was a change that has
 			// an effect to the graphical appearance of the transition
 			this.repaint();
@@ -45,8 +49,8 @@ public class YAWLTransitionFigure extends TransitionFigure {
 		int y = rectangle.y;
 
 		graphics.pushState();
-		graphics.setLineWidth(2);
-		switch (types[0]) {
+		graphics.setLineWidth(1);
+		switch (transitionType[0]) {
 		case XOR:
 			graphics.drawPolygon(new int[] { x + thirdWidth, y, x, y + halfHeight, x + thirdWidth, y + h });
 			break;
@@ -64,7 +68,7 @@ public class YAWLTransitionFigure extends TransitionFigure {
 			break;
 		}
 
-		switch (types[1]) {
+		switch (transitionType[1]) {
 		case XOR:
 			graphics.drawPolygon(new int[] { x + thirdWidth * 2, y, x + w, y + halfHeight, x + thirdWidth * 2, y + h });
 			break;

@@ -127,6 +127,23 @@
             	</message>
             </constraint>
             
+            <constraint
+            	lang="Java"
+            	class="dk.dtu.compute.mbse.yawl.constraints.NoDuplicateArcs"
+            	severity="ERROR"
+            	mode="Batch"
+            	name="Duplicate arcs"
+            	id="dk.dtu.compute.mbse.yawl.validation.duplicate-arcs"
+            	statusCode="404">
+        		<target class="Arc:http://se.compute.dtu.dk/mbse/yawl"/>
+        		<description>
+            		Duplicate arcs.
+            	</description>
+            	<message>
+            		Duplicate Arcs.
+            	</message>
+            </constraint>
+            
          </constraints>
       </constraintProvider>
    </extension>
