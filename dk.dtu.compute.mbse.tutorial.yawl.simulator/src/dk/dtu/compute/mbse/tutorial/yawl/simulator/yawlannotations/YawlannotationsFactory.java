@@ -22,15 +22,6 @@ public interface YawlannotationsFactory extends EFactory {
 	YawlannotationsFactory eINSTANCE = dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Marking</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Marking</em>'.
-	 * @generated
-	 */
-	Marking createMarking();
-
-	/**
 	 * Returns a new object of class '<em>Enabled Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,6 +38,15 @@ public interface YawlannotationsFactory extends EFactory {
 	 * @generated
 	 */
 	InvolvedArc createInvolvedArc();
+
+	/**
+	 * Returns a new object of class '<em>Marking</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Marking</em>'.
+	 * @generated
+	 */
+	Marking createMarking();
 
 	/**
 	 * Returns the package supported by this factory.

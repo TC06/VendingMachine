@@ -4,6 +4,7 @@ package dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -13,8 +14,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
 
@@ -26,33 +25,64 @@ import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#getTarget <em>Target</em>}</li>
- *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#getSource <em>Source</em>}</li>
- *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#isActive <em>Active</em>}</li>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#isSelected <em>Selected</em>}</li>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#getSourceTransition <em>Source Transition</em>}</li>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#getTargetTransition <em>Target Transition</em>}</li>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl#getSourceMarking <em>Source Marking</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc {
 	/**
-	 * The default value of the '{@link #isActive() <em>Active</em>}' attribute.
+	 * The default value of the '{@link #isSelected() <em>Selected</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isActive()
+	 * @see #isSelected()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean ACTIVE_EDEFAULT = false;
+	protected static final boolean SELECTED_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isActive() <em>Active</em>}' attribute.
+	 * The cached value of the '{@link #isSelected() <em>Selected</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isActive()
+	 * @see #isSelected()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean active = ACTIVE_EDEFAULT;
+	protected boolean selected = SELECTED_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getSourceTransition() <em>Source Transition</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceTransition()
+	 * @generated
+	 * @ordered
+	 */
+	protected EnabledTransition sourceTransition;
+
+	/**
+	 * The cached value of the '{@link #getTargetTransition() <em>Target Transition</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTargetTransition()
+	 * @generated
+	 * @ordered
+	 */
+	protected EnabledTransition targetTransition;
+
+	/**
+	 * The cached value of the '{@link #getSourceMarking() <em>Source Marking</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceMarking()
+	 * @generated
+	 * @ordered
+	 */
+	protected Marking sourceMarking;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,9 +108,8 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EnabledTransition getTarget() {
-		if (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__TARGET) return null;
-		return (EnabledTransition)eInternalContainer();
+	public boolean isSelected() {
+		return selected;
 	}
 
 	/**
@@ -88,92 +117,169 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTarget(EnabledTransition newTarget, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newTarget, YawlannotationsPackage.INVOLVED_ARC__TARGET, msgs);
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTarget(EnabledTransition newTarget) {
-		if (newTarget != eInternalContainer() || (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__TARGET && newTarget != null)) {
-			if (EcoreUtil.isAncestor(this, newTarget))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newTarget != null)
-				msgs = ((InternalEObject)newTarget).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
-			msgs = basicSetTarget(newTarget, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__TARGET, newTarget, newTarget));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EnabledTransition getSource() {
-		if (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__SOURCE) return null;
-		return (EnabledTransition)eInternalContainer();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSource(EnabledTransition newSource, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newSource, YawlannotationsPackage.INVOLVED_ARC__SOURCE, msgs);
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSource(EnabledTransition newSource) {
-		if (newSource != eInternalContainer() || (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__SOURCE && newSource != null)) {
-			if (EcoreUtil.isAncestor(this, newSource))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newSource != null)
-				msgs = ((InternalEObject)newSource).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
-			msgs = basicSetSource(newSource, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SOURCE, newSource, newSource));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isActive() {
-		return active;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setActive(boolean newActive) {
-		boolean oldActive = active;
-		active = newActive;
+	public void setSelected(boolean newSelected) {
+		boolean oldSelected = selected;
+		selected = newSelected;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__ACTIVE, oldActive, active));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SELECTED, oldSelected, selected));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EnabledTransition getSourceTransition() {
+		if (sourceTransition != null && sourceTransition.eIsProxy()) {
+			InternalEObject oldSourceTransition = (InternalEObject)sourceTransition;
+			sourceTransition = (EnabledTransition)eResolveProxy(oldSourceTransition);
+			if (sourceTransition != oldSourceTransition) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION, oldSourceTransition, sourceTransition));
+			}
+		}
+		return sourceTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EnabledTransition basicGetSourceTransition() {
+		return sourceTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSourceTransition(EnabledTransition newSourceTransition, NotificationChain msgs) {
+		EnabledTransition oldSourceTransition = sourceTransition;
+		sourceTransition = newSourceTransition;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION, oldSourceTransition, newSourceTransition);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSourceTransition(EnabledTransition newSourceTransition) {
+		if (newSourceTransition != sourceTransition) {
+			NotificationChain msgs = null;
+			if (sourceTransition != null)
+				msgs = ((InternalEObject)sourceTransition).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS, EnabledTransition.class, msgs);
+			if (newSourceTransition != null)
+				msgs = ((InternalEObject)newSourceTransition).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS, EnabledTransition.class, msgs);
+			msgs = basicSetSourceTransition(newSourceTransition, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION, newSourceTransition, newSourceTransition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EnabledTransition getTargetTransition() {
+		if (targetTransition != null && targetTransition.eIsProxy()) {
+			InternalEObject oldTargetTransition = (InternalEObject)targetTransition;
+			targetTransition = (EnabledTransition)eResolveProxy(oldTargetTransition);
+			if (targetTransition != oldTargetTransition) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION, oldTargetTransition, targetTransition));
+			}
+		}
+		return targetTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EnabledTransition basicGetTargetTransition() {
+		return targetTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTargetTransition(EnabledTransition newTargetTransition, NotificationChain msgs) {
+		EnabledTransition oldTargetTransition = targetTransition;
+		targetTransition = newTargetTransition;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION, oldTargetTransition, newTargetTransition);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTargetTransition(EnabledTransition newTargetTransition) {
+		if (newTargetTransition != targetTransition) {
+			NotificationChain msgs = null;
+			if (targetTransition != null)
+				msgs = ((InternalEObject)targetTransition).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS, EnabledTransition.class, msgs);
+			if (newTargetTransition != null)
+				msgs = ((InternalEObject)newTargetTransition).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS, EnabledTransition.class, msgs);
+			msgs = basicSetTargetTransition(newTargetTransition, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION, newTargetTransition, newTargetTransition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Marking getSourceMarking() {
+		if (sourceMarking != null && sourceMarking.eIsProxy()) {
+			InternalEObject oldSourceMarking = (InternalEObject)sourceMarking;
+			sourceMarking = (Marking)eResolveProxy(oldSourceMarking);
+			if (sourceMarking != oldSourceMarking) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING, oldSourceMarking, sourceMarking));
+			}
+		}
+		return sourceMarking;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Marking basicGetSourceMarking() {
+		return sourceMarking;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSourceMarking(Marking newSourceMarking) {
+		Marking oldSourceMarking = sourceMarking;
+		sourceMarking = newSourceMarking;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING, oldSourceMarking, sourceMarking));
 	}
 
 	/**
@@ -184,14 +290,14 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetTarget((EnabledTransition)otherEnd, msgs);
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetSource((EnabledTransition)otherEnd, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				if (sourceTransition != null)
+					msgs = ((InternalEObject)sourceTransition).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS, EnabledTransition.class, msgs);
+				return basicSetSourceTransition((EnabledTransition)otherEnd, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				if (targetTransition != null)
+					msgs = ((InternalEObject)targetTransition).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS, EnabledTransition.class, msgs);
+				return basicSetTargetTransition((EnabledTransition)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -204,10 +310,10 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				return basicSetTarget(null, msgs);
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				return basicSetSource(null, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				return basicSetSourceTransition(null, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				return basicSetTargetTransition(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -218,30 +324,19 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
-		switch (eContainerFeatureID()) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				return eInternalContainer().eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				return eInternalContainer().eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
-		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				return getTarget();
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				return getSource();
-			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
-				return isActive();
+			case YawlannotationsPackage.INVOLVED_ARC__SELECTED:
+				return isSelected();
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				if (resolve) return getSourceTransition();
+				return basicGetSourceTransition();
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				if (resolve) return getTargetTransition();
+				return basicGetTargetTransition();
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING:
+				if (resolve) return getSourceMarking();
+				return basicGetSourceMarking();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -254,14 +349,17 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				setTarget((EnabledTransition)newValue);
+			case YawlannotationsPackage.INVOLVED_ARC__SELECTED:
+				setSelected((Boolean)newValue);
 				return;
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				setSource((EnabledTransition)newValue);
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				setSourceTransition((EnabledTransition)newValue);
 				return;
-			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
-				setActive((Boolean)newValue);
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				setTargetTransition((EnabledTransition)newValue);
+				return;
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING:
+				setSourceMarking((Marking)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -275,14 +373,17 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				setTarget((EnabledTransition)null);
+			case YawlannotationsPackage.INVOLVED_ARC__SELECTED:
+				setSelected(SELECTED_EDEFAULT);
 				return;
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				setSource((EnabledTransition)null);
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				setSourceTransition((EnabledTransition)null);
 				return;
-			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
-				setActive(ACTIVE_EDEFAULT);
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				setTargetTransition((EnabledTransition)null);
+				return;
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING:
+				setSourceMarking((Marking)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -296,12 +397,14 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
-				return getTarget() != null;
-			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
-				return getSource() != null;
-			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
-				return active != ACTIVE_EDEFAULT;
+			case YawlannotationsPackage.INVOLVED_ARC__SELECTED:
+				return selected != SELECTED_EDEFAULT;
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION:
+				return sourceTransition != null;
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION:
+				return targetTransition != null;
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE_MARKING:
+				return sourceMarking != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -316,8 +419,8 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (active: ");
-		result.append(active);
+		result.append(" (selected: ");
+		result.append(selected);
 		result.append(')');
 		return result.toString();
 	}

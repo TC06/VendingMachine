@@ -141,6 +141,98 @@ public class YawlItemProviderAdapterFactory extends YawlAdapterFactory implement
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link dk.dtu.compute.mbse.yawl.Arc} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ArcItemProvider arcItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dk.dtu.compute.mbse.yawl.Arc}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createArcAdapter() {
+		if (arcItemProvider == null) {
+			arcItemProvider = new ArcItemProvider(this);
+		}
+
+		return arcItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link dk.dtu.compute.mbse.yawl.ArcType} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ArcTypeItemProvider arcTypeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dk.dtu.compute.mbse.yawl.ArcType}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createArcTypeAdapter() {
+		if (arcTypeItemProvider == null) {
+			arcTypeItemProvider = new ArcTypeItemProvider(this);
+		}
+
+		return arcTypeItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link dk.dtu.compute.mbse.yawl.Transition} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TransitionItemProvider transitionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dk.dtu.compute.mbse.yawl.Transition}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTransitionAdapter() {
+		if (transitionItemProvider == null) {
+			transitionItemProvider = new TransitionItemProvider(this);
+		}
+
+		return transitionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link dk.dtu.compute.mbse.yawl.TransitionType} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TransitionTypeItemProvider transitionTypeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dk.dtu.compute.mbse.yawl.TransitionType}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTransitionTypeAdapter() {
+		if (transitionTypeItemProvider == null) {
+			transitionTypeItemProvider = new TransitionTypeItemProvider(this);
+		}
+
+		return transitionTypeItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -242,6 +334,10 @@ public class YawlItemProviderAdapterFactory extends YawlAdapterFactory implement
 		if (yawlNetItemProvider != null) yawlNetItemProvider.dispose();
 		if (placeItemProvider != null) placeItemProvider.dispose();
 		if (placeTypeItemProvider != null) placeTypeItemProvider.dispose();
+		if (arcItemProvider != null) arcItemProvider.dispose();
+		if (arcTypeItemProvider != null) arcTypeItemProvider.dispose();
+		if (transitionItemProvider != null) transitionItemProvider.dispose();
+		if (transitionTypeItemProvider != null) transitionTypeItemProvider.dispose();
 	}
 
 }

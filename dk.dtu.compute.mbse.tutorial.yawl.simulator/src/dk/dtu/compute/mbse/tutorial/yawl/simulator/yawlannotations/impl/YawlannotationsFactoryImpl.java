@@ -56,22 +56,12 @@ public class YawlannotationsFactoryImpl extends EFactoryImpl implements Yawlanno
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case YawlannotationsPackage.MARKING: return createMarking();
 			case YawlannotationsPackage.ENABLED_TRANSITION: return createEnabledTransition();
 			case YawlannotationsPackage.INVOLVED_ARC: return createInvolvedArc();
+			case YawlannotationsPackage.MARKING: return createMarking();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Marking createMarking() {
-		MarkingImpl marking = new MarkingImpl();
-		return marking;
 	}
 
 	/**
@@ -92,6 +82,16 @@ public class YawlannotationsFactoryImpl extends EFactoryImpl implements Yawlanno
 	public InvolvedArc createInvolvedArc() {
 		InvolvedArcImpl involvedArc = new InvolvedArcImpl();
 		return involvedArc;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Marking createMarking() {
+		MarkingImpl marking = new MarkingImpl();
+		return marking;
 	}
 
 	/**

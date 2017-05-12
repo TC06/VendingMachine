@@ -72,16 +72,16 @@ public class YawlannotationsAdapterFactory extends AdapterFactoryImpl {
 	protected YawlannotationsSwitch<Adapter> modelSwitch =
 		new YawlannotationsSwitch<Adapter>() {
 			@Override
-			public Adapter caseMarking(Marking object) {
-				return createMarkingAdapter();
-			}
-			@Override
 			public Adapter caseEnabledTransition(EnabledTransition object) {
 				return createEnabledTransitionAdapter();
 			}
 			@Override
 			public Adapter caseInvolvedArc(InvolvedArc object) {
 				return createInvolvedArcAdapter();
+			}
+			@Override
+			public Adapter caseMarking(Marking object) {
+				return createMarkingAdapter();
 			}
 			@Override
 			public Adapter caseAnnotation(Annotation object) {
@@ -116,20 +116,6 @@ public class YawlannotationsAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking <em>Marking</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking
-	 * @generated
-	 */
-	public Adapter createMarkingAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition <em>Enabled Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -154,6 +140,20 @@ public class YawlannotationsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInvolvedArcAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking <em>Marking</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking
+	 * @generated
+	 */
+	public Adapter createMarkingAdapter() {
 		return null;
 	}
 

@@ -4,6 +4,7 @@ package dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -48,7 +49,7 @@ public interface YawlannotationsPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "ya";
+	String eNS_PREFIX = "yan";
 
 	/**
 	 * The singleton instance of the package.
@@ -59,6 +60,188 @@ public interface YawlannotationsPackage extends EPackage {
 	YawlannotationsPackage eINSTANCE = dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl.init();
 
 	/**
+	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl <em>Enabled Transition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getEnabledTransition()
+	 * @generated
+	 */
+	int ENABLED_TRANSITION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Net Annotations</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__NET_ANNOTATIONS = NetannotationsPackage.OBJECT_ANNOTATION__NET_ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Object</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__OBJECT = NetannotationsPackage.OBJECT_ANNOTATION__OBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Out Arcs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__OUT_ARCS = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>In Arcs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__IN_ARCS = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Resolved</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__RESOLVED = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Enabled Transition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Description</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION___GET_DESCRIPTION = NetannotationsPackage.OBJECT_ANNOTATION___GET_DESCRIPTION;
+
+	/**
+	 * The operation id for the '<em>Get Action</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION___GET_ACTION = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Enabled Transition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION_OPERATION_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl <em>Involved Arc</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getInvolvedArc()
+	 * @generated
+	 */
+	int INVOLVED_ARC = 1;
+
+	/**
+	 * The feature id for the '<em><b>Net Annotations</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__NET_ANNOTATIONS = NetannotationsPackage.OBJECT_ANNOTATION__NET_ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Object</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__OBJECT = NetannotationsPackage.OBJECT_ANNOTATION__OBJECT;
+
+	/**
+	 * The feature id for the '<em><b>Selected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__SELECTED = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Source Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__SOURCE_TRANSITION = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Target Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__TARGET_TRANSITION = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Source Marking</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC__SOURCE_MARKING = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Involved Arc</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Get Description</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC___GET_DESCRIPTION = NetannotationsPackage.OBJECT_ANNOTATION___GET_DESCRIPTION;
+
+	/**
+	 * The number of operations of the '<em>Involved Arc</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOLVED_ARC_OPERATION_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.MarkingImpl <em>Marking</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,7 +249,7 @@ public interface YawlannotationsPackage extends EPackage {
 	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getMarking()
 	 * @generated
 	 */
-	int MARKING = 0;
+	int MARKING = 2;
 
 	/**
 	 * The feature id for the '<em><b>Net Annotations</b></em>' reference list.
@@ -131,188 +314,113 @@ public interface YawlannotationsPackage extends EPackage {
 	 */
 	int MARKING_OPERATION_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 1;
 
-	/**
-	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl <em>Enabled Transition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getEnabledTransition()
-	 * @generated
-	 */
-	int ENABLED_TRANSITION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Net Annotations</b></em>' reference list.
+	 * Returns the meta object for class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition <em>Enabled Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Enabled Transition</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__NET_ANNOTATIONS = NetannotationsPackage.OBJECT_ANNOTATION__NET_ANNOTATIONS;
+	EClass getEnabledTransition();
 
 	/**
-	 * The feature id for the '<em><b>Object</b></em>' reference.
+	 * Returns the meta object for the reference list '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getOutArcs <em>Out Arcs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Out Arcs</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getOutArcs()
+	 * @see #getEnabledTransition()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__OBJECT = NetannotationsPackage.OBJECT_ANNOTATION__OBJECT;
+	EReference getEnabledTransition_OutArcs();
 
 	/**
-	 * The feature id for the '<em><b>In</b></em>' containment reference list.
+	 * Returns the meta object for the reference list '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getInArcs <em>In Arcs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>In Arcs</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getInArcs()
+	 * @see #getEnabledTransition()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__IN = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 0;
+	EReference getEnabledTransition_InArcs();
 
 	/**
-	 * The feature id for the '<em><b>Out</b></em>' containment reference list.
+	 * Returns the meta object for the reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolved <em>Resolved</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Resolved</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolved()
+	 * @see #getEnabledTransition()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__OUT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 1;
+	EReference getEnabledTransition_Resolved();
 
 	/**
-	 * The feature id for the '<em><b>Resolve</b></em>' reference.
+	 * Returns the meta object for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getAction() <em>Get Action</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Action</em>' operation.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getAction()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__RESOLVE = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 2;
+	EOperation getEnabledTransition__GetAction();
 
 	/**
-	 * The feature id for the '<em><b>Refs</b></em>' reference list.
+	 * Returns the meta object for class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc <em>Involved Arc</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Involved Arc</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__REFS = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
+	EClass getInvolvedArc();
 
 	/**
-	 * The feature id for the '<em><b>Enabled</b></em>' attribute.
+	 * Returns the meta object for the attribute '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#isSelected <em>Selected</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Selected</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#isSelected()
+	 * @see #getInvolvedArc()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION__ENABLED = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 4;
+	EAttribute getInvolvedArc_Selected();
 
 	/**
-	 * The number of structural features of the '<em>Enabled Transition</em>' class.
+	 * Returns the meta object for the reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceTransition <em>Source Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source Transition</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceTransition()
+	 * @see #getInvolvedArc()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 5;
+	EReference getInvolvedArc_SourceTransition();
 
 	/**
-	 * The operation id for the '<em>Get Description</em>' operation.
+	 * Returns the meta object for the reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTargetTransition <em>Target Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target Transition</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTargetTransition()
+	 * @see #getInvolvedArc()
 	 * @generated
-	 * @ordered
 	 */
-	int ENABLED_TRANSITION___GET_DESCRIPTION = NetannotationsPackage.OBJECT_ANNOTATION___GET_DESCRIPTION;
+	EReference getInvolvedArc_TargetTransition();
 
 	/**
-	 * The number of operations of the '<em>Enabled Transition</em>' class.
+	 * Returns the meta object for the reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceMarking <em>Source Marking</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENABLED_TRANSITION_OPERATION_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl <em>Involved Arc</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getInvolvedArc()
+	 * @return the meta object for the reference '<em>Source Marking</em>'.
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceMarking()
+	 * @see #getInvolvedArc()
 	 * @generated
 	 */
-	int INVOLVED_ARC = 2;
-
-	/**
-	 * The feature id for the '<em><b>Net Annotations</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC__NET_ANNOTATIONS = NetannotationsPackage.OBJECT_ANNOTATION__NET_ANNOTATIONS;
-
-	/**
-	 * The feature id for the '<em><b>Object</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC__OBJECT = NetannotationsPackage.OBJECT_ANNOTATION__OBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Target</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC__TARGET = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Source</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC__SOURCE = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC__ACTIVE = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of structural features of the '<em>Involved Arc</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
-
-	/**
-	 * The operation id for the '<em>Get Description</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC___GET_DESCRIPTION = NetannotationsPackage.OBJECT_ANNOTATION___GET_DESCRIPTION;
-
-	/**
-	 * The number of operations of the '<em>Involved Arc</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOLVED_ARC_OPERATION_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_OPERATION_COUNT + 0;
-
+	EReference getInvolvedArc_SourceMarking();
 
 	/**
 	 * Returns the meta object for class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking <em>Marking</em>}'.
@@ -334,114 +442,6 @@ public interface YawlannotationsPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMarking_Value();
-
-	/**
-	 * Returns the meta object for class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition <em>Enabled Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Enabled Transition</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition
-	 * @generated
-	 */
-	EClass getEnabledTransition();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getIn <em>In</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>In</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getIn()
-	 * @see #getEnabledTransition()
-	 * @generated
-	 */
-	EReference getEnabledTransition_In();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getOut <em>Out</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Out</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getOut()
-	 * @see #getEnabledTransition()
-	 * @generated
-	 */
-	EReference getEnabledTransition_Out();
-
-	/**
-	 * Returns the meta object for the reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolve <em>Resolve</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Resolve</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolve()
-	 * @see #getEnabledTransition()
-	 * @generated
-	 */
-	EReference getEnabledTransition_Resolve();
-
-	/**
-	 * Returns the meta object for the reference list '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getRefs <em>Refs</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Refs</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getRefs()
-	 * @see #getEnabledTransition()
-	 * @generated
-	 */
-	EReference getEnabledTransition_Refs();
-
-	/**
-	 * Returns the meta object for the attribute '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#isEnabled <em>Enabled</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Enabled</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#isEnabled()
-	 * @see #getEnabledTransition()
-	 * @generated
-	 */
-	EAttribute getEnabledTransition_Enabled();
-
-	/**
-	 * Returns the meta object for class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc <em>Involved Arc</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Involved Arc</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc
-	 * @generated
-	 */
-	EClass getInvolvedArc();
-
-	/**
-	 * Returns the meta object for the container reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Target</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTarget()
-	 * @see #getInvolvedArc()
-	 * @generated
-	 */
-	EReference getInvolvedArc_Target();
-
-	/**
-	 * Returns the meta object for the container reference '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Source</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSource()
-	 * @see #getInvolvedArc()
-	 * @generated
-	 */
-	EReference getInvolvedArc_Source();
-
-	/**
-	 * Returns the meta object for the attribute '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#isActive <em>Active</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Active</em>'.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#isActive()
-	 * @see #getInvolvedArc()
-	 * @generated
-	 */
-	EAttribute getInvolvedArc_Active();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -467,6 +467,90 @@ public interface YawlannotationsPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
+		 * The meta object literal for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl <em>Enabled Transition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl
+		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getEnabledTransition()
+		 * @generated
+		 */
+		EClass ENABLED_TRANSITION = eINSTANCE.getEnabledTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Out Arcs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENABLED_TRANSITION__OUT_ARCS = eINSTANCE.getEnabledTransition_OutArcs();
+
+		/**
+		 * The meta object literal for the '<em><b>In Arcs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENABLED_TRANSITION__IN_ARCS = eINSTANCE.getEnabledTransition_InArcs();
+
+		/**
+		 * The meta object literal for the '<em><b>Resolved</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENABLED_TRANSITION__RESOLVED = eINSTANCE.getEnabledTransition_Resolved();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Action</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ENABLED_TRANSITION___GET_ACTION = eINSTANCE.getEnabledTransition__GetAction();
+
+		/**
+		 * The meta object literal for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl <em>Involved Arc</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl
+		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getInvolvedArc()
+		 * @generated
+		 */
+		EClass INVOLVED_ARC = eINSTANCE.getInvolvedArc();
+
+		/**
+		 * The meta object literal for the '<em><b>Selected</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INVOLVED_ARC__SELECTED = eINSTANCE.getInvolvedArc_Selected();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INVOLVED_ARC__SOURCE_TRANSITION = eINSTANCE.getInvolvedArc_SourceTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INVOLVED_ARC__TARGET_TRANSITION = eINSTANCE.getInvolvedArc_TargetTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Marking</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INVOLVED_ARC__SOURCE_MARKING = eINSTANCE.getInvolvedArc_SourceMarking();
+
+		/**
 		 * The meta object literal for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.MarkingImpl <em>Marking</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -483,90 +567,6 @@ public interface YawlannotationsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MARKING__VALUE = eINSTANCE.getMarking_Value();
-
-		/**
-		 * The meta object literal for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl <em>Enabled Transition</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl
-		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getEnabledTransition()
-		 * @generated
-		 */
-		EClass ENABLED_TRANSITION = eINSTANCE.getEnabledTransition();
-
-		/**
-		 * The meta object literal for the '<em><b>In</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ENABLED_TRANSITION__IN = eINSTANCE.getEnabledTransition_In();
-
-		/**
-		 * The meta object literal for the '<em><b>Out</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ENABLED_TRANSITION__OUT = eINSTANCE.getEnabledTransition_Out();
-
-		/**
-		 * The meta object literal for the '<em><b>Resolve</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ENABLED_TRANSITION__RESOLVE = eINSTANCE.getEnabledTransition_Resolve();
-
-		/**
-		 * The meta object literal for the '<em><b>Refs</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ENABLED_TRANSITION__REFS = eINSTANCE.getEnabledTransition_Refs();
-
-		/**
-		 * The meta object literal for the '<em><b>Enabled</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ENABLED_TRANSITION__ENABLED = eINSTANCE.getEnabledTransition_Enabled();
-
-		/**
-		 * The meta object literal for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl <em>Involved Arc</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.InvolvedArcImpl
-		 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.YawlannotationsPackageImpl#getInvolvedArc()
-		 * @generated
-		 */
-		EClass INVOLVED_ARC = eINSTANCE.getInvolvedArc();
-
-		/**
-		 * The meta object literal for the '<em><b>Target</b></em>' container reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INVOLVED_ARC__TARGET = eINSTANCE.getInvolvedArc_Target();
-
-		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' container reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INVOLVED_ARC__SOURCE = eINSTANCE.getInvolvedArc_Source();
-
-		/**
-		 * The meta object literal for the '<em><b>Active</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INVOLVED_ARC__ACTIVE = eINSTANCE.getInvolvedArc_Active();
 
 	}
 
