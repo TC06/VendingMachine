@@ -13,11 +13,9 @@ import org.pnml.tools.epnk.pnmlcoremodel.Place;
 import org.pnml.tools.epnk.pnmlcoremodel.PlaceNode;
 import org.pnml.tools.epnk.pnmlcoremodel.RefPlace;
 import org.pnml.tools.epnk.pnmlcoremodel.RefTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsFactory;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.marking.NetMarking;
-//import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsFactory;
 import dk.dtu.compute.mbse.yawl.AType;
@@ -32,7 +30,7 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * into account; neither does it take reset arcs into account. Moreover,
  * the user can not select arcs yet. This needs to be extended!
  * 
- * @author ekki@dtu.dk
+ * @author Tolga
  *
  */
 public class YAWLSimulator extends ApplicationWithUIManager {
@@ -126,15 +124,15 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 			if (object instanceof Transition) {
 				Transition transition = (Transition) object;
 				if (isEnabled(marking, transition)) {
-					EnabledTransition enabledTransition = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
+					EnabledTransition enabledTransition = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
 					enabledTransition.setObject(transition);
 					annotation.getObjectAnnotations().add(enabledTransition);
 					enabledTransition.setEnabled(true);
 
 					for (RefTransition refTransition: getFlatAccess().getRefTransitions(transition)) {
-						EnabledTransition enabledTransition2 = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
+						EnabledTransition enabledTransition2 = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
 						enabledTransition2.setObject(refTransition);
-						enabledTransition2.setResolve(enabledTransition);
+						enabledTransition2.setResolved(enabledTransition);
 						enabledTransition2.setEnabled(enabledTransition.isEnabled());
 						annotation.getObjectAnnotations().add(enabledTransition2);
 					}

@@ -10,7 +10,7 @@
       <!-- @generated simulator-annotations -->
       <package
             uri="http://epnk.tools.pnml.org/tutorials/app/technialc/simanno"
-            class="org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage"
+            class="org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage"
             genModel="model/simulator-annotations.genmodel"/>
    </extension>
    

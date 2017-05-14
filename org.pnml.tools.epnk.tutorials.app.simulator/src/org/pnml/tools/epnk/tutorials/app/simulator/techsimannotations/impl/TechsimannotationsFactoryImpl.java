@@ -27,7 +27,7 @@ public class TechsimannotationsFactoryImpl extends EFactoryImpl implements Techs
 	 */
 	public static TechsimannotationsFactory init() {
 		try {
-			TechsimannotationsFactory theTechsimannotationsFactory = (TechsimannotationsFactory)EPackage.Registry.INSTANCE.getEFactory(TechsimannotationsPackage.eNS_URI);
+			TechsimannotationsFactory theTechsimannotationsFactory = (TechsimannotationsFactory)EPackage.Registry.INSTANCE.getEFactory(YawlannotationsPackage.eNS_URI);
 			if (theTechsimannotationsFactory != null) {
 				return theTechsimannotationsFactory;
 			}
@@ -56,9 +56,9 @@ public class TechsimannotationsFactoryImpl extends EFactoryImpl implements Techs
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case TechsimannotationsPackage.MARKING: return createMarking();
-			case TechsimannotationsPackage.ENABLED_TRANSITION: return createEnabledTransition();
-			case TechsimannotationsPackage.INVOLVED_ARC: return createInvolvedArc();
+			case YawlannotationsPackage.MARKING: return createMarking();
+			case YawlannotationsPackage.ENABLED_TRANSITION: return createEnabledTransition();
+			case YawlannotationsPackage.INVOLVED_ARC: return createInvolvedArc();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,8 +99,8 @@ public class TechsimannotationsFactoryImpl extends EFactoryImpl implements Techs
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TechsimannotationsPackage getTechsimannotationsPackage() {
-		return (TechsimannotationsPackage)getEPackage();
+	public YawlannotationsPackage getTechsimannotationsPackage() {
+		return (YawlannotationsPackage)getEPackage();
 	}
 
 	/**
@@ -110,8 +110,8 @@ public class TechsimannotationsFactoryImpl extends EFactoryImpl implements Techs
 	 * @generated
 	 */
 	@Deprecated
-	public static TechsimannotationsPackage getPackage() {
-		return TechsimannotationsPackage.eINSTANCE;
+	public static YawlannotationsPackage getPackage() {
+		return YawlannotationsPackage.eINSTANCE;
 	}
 
 } //TechsimannotationsFactoryImpl

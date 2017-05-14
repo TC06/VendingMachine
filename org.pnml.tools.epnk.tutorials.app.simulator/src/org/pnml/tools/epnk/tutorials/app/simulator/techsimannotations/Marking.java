@@ -17,7 +17,7 @@ import org.pnml.tools.epnk.annotations.netannotations.TextualAnnotation;
  *   <li>{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.Marking#getValue <em>Value</em>}</li>
  * </ul>
  *
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getMarking()
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getMarking()
  * @model
  * @generated
  */
@@ -32,7 +32,7 @@ public interface Marking extends ObjectAnnotation, TextualAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(int)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getMarking_Value()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getMarking_Value()
 	 * @model
 	 * @generated
 	 */

@@ -22,7 +22,7 @@ import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
 
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -118,7 +118,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TechsimannotationsPackage.Literals.ENABLED_TRANSITION;
+		return YawlannotationsPackage.Literals.ENABLED_TRANSITION;
 	}
 
 	/**
@@ -128,7 +128,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 */
 	public EList<InvolvedArc> getIn() {
 		if (in == null) {
-			in = new EObjectContainmentWithInverseEList<InvolvedArc>(InvolvedArc.class, this, TechsimannotationsPackage.ENABLED_TRANSITION__IN, TechsimannotationsPackage.INVOLVED_ARC__TARGET);
+			in = new EObjectContainmentWithInverseEList<InvolvedArc>(InvolvedArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__IN, YawlannotationsPackage.INVOLVED_ARC__TARGET);
 		}
 		return in;
 	}
@@ -140,7 +140,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 */
 	public EList<InvolvedArc> getOut() {
 		if (out == null) {
-			out = new EObjectContainmentWithInverseEList<InvolvedArc>(InvolvedArc.class, this, TechsimannotationsPackage.ENABLED_TRANSITION__OUT, TechsimannotationsPackage.INVOLVED_ARC__SOURCE);
+			out = new EObjectContainmentWithInverseEList<InvolvedArc>(InvolvedArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__OUT, YawlannotationsPackage.INVOLVED_ARC__SOURCE);
 		}
 		return out;
 	}
@@ -156,7 +156,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 			resolve = (EnabledTransition)eResolveProxy(oldResolve);
 			if (resolve != oldResolve) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE, oldResolve, resolve));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE, oldResolve, resolve));
 			}
 		}
 		return resolve;
@@ -180,7 +180,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 		EnabledTransition oldResolve = resolve;
 		resolve = newResolve;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE, oldResolve, newResolve);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE, oldResolve, newResolve);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -195,14 +195,14 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 		if (newResolve != resolve) {
 			NotificationChain msgs = null;
 			if (resolve != null)
-				msgs = ((InternalEObject)resolve).eInverseRemove(this, TechsimannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
+				msgs = ((InternalEObject)resolve).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
 			if (newResolve != null)
-				msgs = ((InternalEObject)newResolve).eInverseAdd(this, TechsimannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
+				msgs = ((InternalEObject)newResolve).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
 			msgs = basicSetResolve(newResolve, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE, newResolve, newResolve));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE, newResolve, newResolve));
 	}
 
 	/**
@@ -223,7 +223,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 		boolean oldEnabled = enabled;
 		enabled = newEnabled;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.ENABLED_TRANSITION__ENABLED, oldEnabled, enabled));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.ENABLED_TRANSITION__ENABLED, oldEnabled, enabled));
 	}
 
 	/**
@@ -233,7 +233,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 */
 	public EList<EnabledTransition> getRefs() {
 		if (refs == null) {
-			refs = new EObjectWithInverseResolvingEList<EnabledTransition>(EnabledTransition.class, this, TechsimannotationsPackage.ENABLED_TRANSITION__REFS, TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE);
+			refs = new EObjectWithInverseResolvingEList<EnabledTransition>(EnabledTransition.class, this, YawlannotationsPackage.ENABLED_TRANSITION__REFS, YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE);
 		}
 		return refs;
 	}
@@ -247,15 +247,15 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getIn()).basicAdd(otherEnd, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getOut()).basicAdd(otherEnd, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				if (resolve != null)
-					msgs = ((InternalEObject)resolve).eInverseRemove(this, TechsimannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
+					msgs = ((InternalEObject)resolve).eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__REFS, EnabledTransition.class, msgs);
 				return basicSetResolve((EnabledTransition)otherEnd, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getRefs()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -269,13 +269,13 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				return ((InternalEList<?>)getIn()).basicRemove(otherEnd, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				return ((InternalEList<?>)getOut()).basicRemove(otherEnd, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				return basicSetResolve(null, msgs);
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				return ((InternalEList<?>)getRefs()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -289,16 +289,16 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				return getIn();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				return getOut();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				if (resolve) return getResolve();
 				return basicGetResolve();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__ENABLED:
+			case YawlannotationsPackage.ENABLED_TRANSITION__ENABLED:
 				return isEnabled();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				return getRefs();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -313,21 +313,21 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				getIn().clear();
 				getIn().addAll((Collection<? extends InvolvedArc>)newValue);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				getOut().clear();
 				getOut().addAll((Collection<? extends InvolvedArc>)newValue);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				setResolve((EnabledTransition)newValue);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__ENABLED:
+			case YawlannotationsPackage.ENABLED_TRANSITION__ENABLED:
 				setEnabled((Boolean)newValue);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				getRefs().clear();
 				getRefs().addAll((Collection<? extends EnabledTransition>)newValue);
 				return;
@@ -343,19 +343,19 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				getIn().clear();
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				getOut().clear();
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				setResolve((EnabledTransition)null);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__ENABLED:
+			case YawlannotationsPackage.ENABLED_TRANSITION__ENABLED:
 				setEnabled(ENABLED_EDEFAULT);
 				return;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				getRefs().clear();
 				return;
 		}
@@ -370,15 +370,15 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.ENABLED_TRANSITION__IN:
+			case YawlannotationsPackage.ENABLED_TRANSITION__IN:
 				return in != null && !in.isEmpty();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__OUT:
+			case YawlannotationsPackage.ENABLED_TRANSITION__OUT:
 				return out != null && !out.isEmpty();
-			case TechsimannotationsPackage.ENABLED_TRANSITION__RESOLVE:
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVE:
 				return resolve != null;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__ENABLED:
+			case YawlannotationsPackage.ENABLED_TRANSITION__ENABLED:
 				return enabled != ENABLED_EDEFAULT;
-			case TechsimannotationsPackage.ENABLED_TRANSITION__REFS:
+			case YawlannotationsPackage.ENABLED_TRANSITION__REFS:
 				return refs != null && !refs.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -399,5 +399,7 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 		result.append(')');
 		return result.toString();
 	}
+	
+	
 
 } //EnabledTransitionImpl

@@ -22,7 +22,7 @@ import org.pnml.tools.epnk.annotations.netannotations.ObjectAnnotation;
  *   <li>{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getRefs <em>Refs</em>}</li>
  * </ul>
  *
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition()
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition()
  * @model
  * @generated
  */
@@ -38,7 +38,7 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>In</em>' containment reference list.
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition_In()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_In()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc#getTarget
 	 * @model opposite="target" containment="true"
 	 * @generated
@@ -56,7 +56,7 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Out</em>' containment reference list.
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition_Out()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Out()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc#getSource
 	 * @model opposite="source" containment="true"
 	 * @generated
@@ -74,7 +74,7 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resolve</em>' reference.
 	 * @see #setResolve(EnabledTransition)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition_Resolve()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Resolve()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getRefs
 	 * @model opposite="refs"
 	 * @generated
@@ -101,7 +101,7 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Enabled</em>' attribute.
 	 * @see #setEnabled(boolean)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition_Enabled()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Enabled()
 	 * @model required="true"
 	 * @generated
 	 */
@@ -128,7 +128,7 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Refs</em>' reference list.
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getEnabledTransition_Refs()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Refs()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getResolve
 	 * @model opposite="resolve"
 	 * @generated

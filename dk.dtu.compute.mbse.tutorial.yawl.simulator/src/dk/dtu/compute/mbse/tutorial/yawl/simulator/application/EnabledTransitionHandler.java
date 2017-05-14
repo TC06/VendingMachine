@@ -11,9 +11,9 @@ import org.pnml.tools.epnk.applications.ui.IActionHandler;
 import org.pnml.tools.epnk.helpers.NetFunctions;
 import org.pnml.tools.epnk.pnmlcoremodel.TransitionNode;
 // TODO EnabledTransition should eventually be replaced by your own annotations (Tutorial 8)
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
 
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 import dk.dtu.compute.mbse.yawl.Arc;
 //TODO Action is in probably dk.dtu.compute.mbse.yawl.Transition in your cases
 import dk.dtu.compute.mbse.yawl.Transition;
@@ -23,7 +23,7 @@ import dk.dtu.compute.mbse.yawl.Transition;
  * Action handler dealing with mouse clicks on EnableTransition annotations.
  * It will fire the transition, if it is enabled.
  * 
- * @author ekki@dtu.dk
+ * @author Tolga
  *
  */
 public class EnabledTransitionHandler implements IActionHandler {
@@ -32,7 +32,7 @@ public class EnabledTransitionHandler implements IActionHandler {
 
 	public EnabledTransitionHandler(YAWLSimulator application) {
 		super();
-		this.application = application;	
+		this.application = application;
 	}
 
 	@Override
@@ -56,17 +56,17 @@ public class EnabledTransitionHandler implements IActionHandler {
 					//      (see project org.pnml.tools.epnk.tutorials.app.simulator)
 
 					Collection<Arc> inactiveInArcs = new HashSet<Arc>();
-					for(InvolvedArc a: enabledTransition.getIn()){
+					for(SelectArc a: enabledTransition.getInArcs()){
 						Object o = a.getObject();
-						if(o instanceof Arc && !a.isActive()){
+						if(o instanceof Arc && !a.isSelected()){
 							inactiveInArcs.add((Arc) o);
 						}
 					}
 
 					Collection<Arc> inactiveOutArcs = new HashSet<Arc>();
-					for(InvolvedArc a: enabledTransition.getOut()){
+					for(SelectArc a: enabledTransition.getOutArcs()){
 						Object o = a.getObject();
-						if(o instanceof Arc && !a.isActive()){
+						if(o instanceof Arc && !a.isSelected()){
 							inactiveOutArcs.add((Arc) o);
 						}
 					}

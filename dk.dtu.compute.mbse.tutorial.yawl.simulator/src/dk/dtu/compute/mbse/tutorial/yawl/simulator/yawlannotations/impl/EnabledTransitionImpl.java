@@ -49,6 +49,16 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 * @ordered
 	 */
 	protected EnabledTransition resolved;
+	
+	/**
+	 * The cached value of the '{@link #getRefs() <em>Refs</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRefs()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<EnabledTransition> refs;
 
 	/**
 	 * The cached value of the '{@link #getOutArcs() <em>Out Arcs</em>}' reference list.
@@ -69,6 +79,16 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 * @ordered
 	 */
 	protected EList<SelectArc> inArcs;
+	
+	/**
+	 * @author Tolga
+	 */
+	protected static final boolean ENABLED_EDEFAULT = false; 
+	
+	/**
+	 * @author Tolga
+	 */
+	protected boolean enabled = ENABLED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -275,6 +295,36 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 				return inArcs != null && !inArcs.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+	
+	/**
+	 * @author Tolga
+	 * @return
+	 */
+	public boolean isEnabled(){
+		return enabled;
+	}
+	
+	/**
+	 * @author Tolga
+	 */
+	public void setEnabled(boolean newEnabled){
+		boolean oldEnabled = enabled;
+		enabled = newEnabled;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.ENABLED_TRANSITION__ENABLED, oldEnabled, enabled));
+	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<EnabledTransition> getRefs() {
+		if (refs == null) {
+			refs = new EObjectWithInverseResolvingEList<EnabledTransition>(EnabledTransition.class, this, YawlannotationsPackage.ENABLED_TRANSITION__REFS, YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED);
+		}
+		return refs;
 	}
 
 } //EnabledTransitionImpl

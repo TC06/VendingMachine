@@ -9,7 +9,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage
  * @generated
  */
 public interface TechsimannotationsFactory extends EFactory {
@@ -55,6 +55,6 @@ public interface TechsimannotationsFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	TechsimannotationsPackage getTechsimannotationsPackage();
+	YawlannotationsPackage getTechsimannotationsPackage();
 
 } //TechsimannotationsFactory

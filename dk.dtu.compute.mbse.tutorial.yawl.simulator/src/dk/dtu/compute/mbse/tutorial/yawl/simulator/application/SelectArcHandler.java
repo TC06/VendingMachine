@@ -5,14 +5,14 @@ import org.pnml.tools.epnk.annotations.netannotations.ObjectAnnotation;
 import org.pnml.tools.epnk.applications.ui.IActionHandler;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
-import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 
 /**
  * Action handler dealing with clicks on InvolvedArc annotations. It
  * will toggle the active status of the arc and update the enabledness
  * status of the attached transition.
  * 
- * @author ekki@dtu.dk
+ * @author Tolga
  *
  */
 public class SelectArcHandler implements IActionHandler {
@@ -31,19 +31,19 @@ public class SelectArcHandler implements IActionHandler {
 
 	@Override
 	public boolean mousePressed(MouseEvent arg0, ObjectAnnotation annotation) {
-		if (annotation instanceof InvolvedArc) {
-			InvolvedArc involvedArc = (InvolvedArc) annotation;
+		if (annotation instanceof SelectArc) {
+			SelectArc selectArc = (SelectArc) annotation;
 			// change status of the involved arc
-			involvedArc.setActive(!involvedArc.isActive());
+			selectArc.setSelected(!selectArc.isSelected());
 			
-			EnabledTransition transition = involvedArc.getTarget();
+			EnabledTransition transition = selectArc.getTargetTransition();
 			if (transition != null) {
 				// check whether the change of active status of the
 				// arc changes the enabledness of the transition
 				boolean active = transition.isEnabled();
 				boolean result = true;
-				for (InvolvedArc other: transition.getIn()) {
-					if (other.isActive()) {
+				for (SelectArc other: transition.getInArcs()) {
+					if (other.isSelected()) {
 						result = false;
 						break;
 					}

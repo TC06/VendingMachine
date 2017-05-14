@@ -13,14 +13,14 @@ import org.pnml.tools.epnk.pnmlcoremodel.Arc;
 import org.pnml.tools.epnk.pnmlcoremodel.TransitionNode;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
-import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 
 /**
  * Presentation handler for all annotations which have a specific appearance
  * in the simulator. These are the involved arcs and the enabled transitions.
  * Markings will properly be shown by the default presentation handlers.
  * 
- * @author ekki@dtu.dk
+ * @author Tolga
  *
  */
 public class YAWLAnnotationsPresentationHandler implements IPresentationHandler {
@@ -45,14 +45,14 @@ public class YAWLAnnotationsPresentationHandler implements IPresentationHandler 
 					return overlay;
 				}
 			}
-		} else if (annotation instanceof InvolvedArc) {
-			InvolvedArc involvedArc = (InvolvedArc) annotation;
+		} else if (annotation instanceof SelectArc) {
+			SelectArc selectArc = (SelectArc) annotation;
 			if (editPart instanceof ConnectionNodeEditPart) {
 				ConnectionNodeEditPart connectionEditPart = (ConnectionNodeEditPart) editPart;
 				java.lang.Object modelObject = connectionEditPart.resolveSemanticElement();
 				if (modelObject instanceof Arc) {
 					PolylineOverlay overlay = new PolylineOverlay(connectionEditPart);
-					if (involvedArc.isActive()) {
+					if (selectArc.isSelected()) {
 						overlay.setForegroundColor(ColorConstants.lightGray);
 						overlay.setBackgroundColor(ColorConstants.lightGray);
 					} else {

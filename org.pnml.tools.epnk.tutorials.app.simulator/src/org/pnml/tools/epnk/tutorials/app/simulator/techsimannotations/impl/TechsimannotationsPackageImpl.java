@@ -15,7 +15,7 @@ import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTra
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.Marking;
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsFactory;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +23,7 @@ import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.Techsimann
  * <!-- end-user-doc -->
  * @generated
  */
-public class TechsimannotationsPackageImpl extends EPackageImpl implements TechsimannotationsPackage {
+public class TechsimannotationsPackageImpl extends EPackageImpl implements YawlannotationsPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,7 +56,7 @@ public class TechsimannotationsPackageImpl extends EPackageImpl implements Techs
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#eNS_URI
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
@@ -74,7 +74,7 @@ public class TechsimannotationsPackageImpl extends EPackageImpl implements Techs
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link TechsimannotationsPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link YawlannotationsPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83,8 +83,8 @@ public class TechsimannotationsPackageImpl extends EPackageImpl implements Techs
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static TechsimannotationsPackage init() {
-		if (isInited) return (TechsimannotationsPackage)EPackage.Registry.INSTANCE.getEPackage(TechsimannotationsPackage.eNS_URI);
+	public static YawlannotationsPackage init() {
+		if (isInited) return (YawlannotationsPackage)EPackage.Registry.INSTANCE.getEPackage(YawlannotationsPackage.eNS_URI);
 
 		// Obtain or create and register package
 		TechsimannotationsPackageImpl theTechsimannotationsPackage = (TechsimannotationsPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TechsimannotationsPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TechsimannotationsPackageImpl());
@@ -105,7 +105,7 @@ public class TechsimannotationsPackageImpl extends EPackageImpl implements Techs
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(TechsimannotationsPackage.eNS_URI, theTechsimannotationsPackage);
+		EPackage.Registry.INSTANCE.put(YawlannotationsPackage.eNS_URI, theTechsimannotationsPackage);
 		return theTechsimannotationsPackage;
 	}
 

@@ -14,7 +14,7 @@ import org.pnml.tools.epnk.helpers.FlatAccess;
  * is changed while the application is running and ask the end user whether
  * to shut down the simulator (continuing would not be save).
  * 
- * @author ekki@dtu.dk
+ *@author Tolga
  *
  */
 public class NetChangeListener implements Adapter {

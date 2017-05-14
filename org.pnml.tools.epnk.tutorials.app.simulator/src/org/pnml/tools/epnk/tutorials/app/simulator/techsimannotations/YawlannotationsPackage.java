@@ -24,7 +24,7 @@ import org.pnml.tools.epnk.annotations.netannotations.NetannotationsPackage;
  * @model kind="package"
  * @generated
  */
-public interface TechsimannotationsPackage extends EPackage {
+public interface YawlannotationsPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
@@ -55,7 +55,7 @@ public interface TechsimannotationsPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	TechsimannotationsPackage eINSTANCE = org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.impl.TechsimannotationsPackageImpl.init();
+	YawlannotationsPackage eINSTANCE = org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.impl.TechsimannotationsPackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.impl.MarkingImpl <em>Marking</em>}' class.

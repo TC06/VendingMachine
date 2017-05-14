@@ -16,7 +16,7 @@ import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
 
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,7 +69,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TechsimannotationsPackage.Literals.INVOLVED_ARC;
+		return YawlannotationsPackage.Literals.INVOLVED_ARC;
 	}
 
 	/**
@@ -78,7 +78,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public EnabledTransition getTarget() {
-		if (eContainerFeatureID() != TechsimannotationsPackage.INVOLVED_ARC__TARGET) return null;
+		if (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__TARGET) return null;
 		return (EnabledTransition)eInternalContainer();
 	}
 
@@ -88,7 +88,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public NotificationChain basicSetTarget(EnabledTransition newTarget, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newTarget, TechsimannotationsPackage.INVOLVED_ARC__TARGET, msgs);
+		msgs = eBasicSetContainer((InternalEObject)newTarget, YawlannotationsPackage.INVOLVED_ARC__TARGET, msgs);
 		return msgs;
 	}
 
@@ -98,19 +98,19 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public void setTarget(EnabledTransition newTarget) {
-		if (newTarget != eInternalContainer() || (eContainerFeatureID() != TechsimannotationsPackage.INVOLVED_ARC__TARGET && newTarget != null)) {
+		if (newTarget != eInternalContainer() || (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__TARGET && newTarget != null)) {
 			if (EcoreUtil.isAncestor(this, newTarget))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newTarget != null)
-				msgs = ((InternalEObject)newTarget).eInverseAdd(this, TechsimannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
+				msgs = ((InternalEObject)newTarget).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
 			msgs = basicSetTarget(newTarget, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.INVOLVED_ARC__TARGET, newTarget, newTarget));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__TARGET, newTarget, newTarget));
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public EnabledTransition getSource() {
-		if (eContainerFeatureID() != TechsimannotationsPackage.INVOLVED_ARC__SOURCE) return null;
+		if (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__SOURCE) return null;
 		return (EnabledTransition)eInternalContainer();
 	}
 
@@ -129,7 +129,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public NotificationChain basicSetSource(EnabledTransition newSource, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newSource, TechsimannotationsPackage.INVOLVED_ARC__SOURCE, msgs);
+		msgs = eBasicSetContainer((InternalEObject)newSource, YawlannotationsPackage.INVOLVED_ARC__SOURCE, msgs);
 		return msgs;
 	}
 
@@ -139,19 +139,19 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	 * @generated
 	 */
 	public void setSource(EnabledTransition newSource) {
-		if (newSource != eInternalContainer() || (eContainerFeatureID() != TechsimannotationsPackage.INVOLVED_ARC__SOURCE && newSource != null)) {
+		if (newSource != eInternalContainer() || (eContainerFeatureID() != YawlannotationsPackage.INVOLVED_ARC__SOURCE && newSource != null)) {
 			if (EcoreUtil.isAncestor(this, newSource))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newSource != null)
-				msgs = ((InternalEObject)newSource).eInverseAdd(this, TechsimannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
+				msgs = ((InternalEObject)newSource).eInverseAdd(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
 			msgs = basicSetSource(newSource, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.INVOLVED_ARC__SOURCE, newSource, newSource));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__SOURCE, newSource, newSource));
 	}
 
 	/**
@@ -172,7 +172,7 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 		boolean oldActive = active;
 		active = newActive;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.INVOLVED_ARC__ACTIVE, oldActive, active));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.INVOLVED_ARC__ACTIVE, oldActive, active));
 	}
 
 	/**
@@ -183,11 +183,11 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetTarget((EnabledTransition)otherEnd, msgs);
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				if (eInternalContainer() != null)
 					msgs = eBasicRemoveFromContainer(msgs);
 				return basicSetSource((EnabledTransition)otherEnd, msgs);
@@ -203,9 +203,9 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				return basicSetTarget(null, msgs);
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				return basicSetSource(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -219,10 +219,10 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
-				return eInternalContainer().eInverseRemove(this, TechsimannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
-				return eInternalContainer().eInverseRemove(this, TechsimannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
+				return eInternalContainer().eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__IN, EnabledTransition.class, msgs);
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
+				return eInternalContainer().eInverseRemove(this, YawlannotationsPackage.ENABLED_TRANSITION__OUT, EnabledTransition.class, msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -235,11 +235,11 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				return getTarget();
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				return getSource();
-			case TechsimannotationsPackage.INVOLVED_ARC__ACTIVE:
+			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
 				return isActive();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -253,13 +253,13 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				setTarget((EnabledTransition)newValue);
 				return;
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				setSource((EnabledTransition)newValue);
 				return;
-			case TechsimannotationsPackage.INVOLVED_ARC__ACTIVE:
+			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
 				setActive((Boolean)newValue);
 				return;
 		}
@@ -274,13 +274,13 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				setTarget((EnabledTransition)null);
 				return;
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				setSource((EnabledTransition)null);
 				return;
-			case TechsimannotationsPackage.INVOLVED_ARC__ACTIVE:
+			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
 				setActive(ACTIVE_EDEFAULT);
 				return;
 		}
@@ -295,11 +295,11 @@ public class InvolvedArcImpl extends ObjectAnnotationImpl implements InvolvedArc
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.INVOLVED_ARC__TARGET:
+			case YawlannotationsPackage.INVOLVED_ARC__TARGET:
 				return getTarget() != null;
-			case TechsimannotationsPackage.INVOLVED_ARC__SOURCE:
+			case YawlannotationsPackage.INVOLVED_ARC__SOURCE:
 				return getSource() != null;
-			case TechsimannotationsPackage.INVOLVED_ARC__ACTIVE:
+			case YawlannotationsPackage.INVOLVED_ARC__ACTIVE:
 				return active != ACTIVE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

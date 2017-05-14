@@ -20,7 +20,7 @@ import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.*;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage
  * @generated
  */
 public class TechsimannotationsAdapterFactory extends AdapterFactoryImpl {
@@ -30,7 +30,7 @@ public class TechsimannotationsAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static TechsimannotationsPackage modelPackage;
+	protected static YawlannotationsPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -40,7 +40,7 @@ public class TechsimannotationsAdapterFactory extends AdapterFactoryImpl {
 	 */
 	public TechsimannotationsAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = TechsimannotationsPackage.eINSTANCE;
+			modelPackage = YawlannotationsPackage.eINSTANCE;
 		}
 	}
 

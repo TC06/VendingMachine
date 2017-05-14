@@ -12,7 +12,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
 
 import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.Marking;
-import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +64,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TechsimannotationsPackage.Literals.MARKING;
+		return YawlannotationsPackage.Literals.MARKING;
 	}
 
 	/**
@@ -85,7 +85,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 		int oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TechsimannotationsPackage.MARKING__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET, YawlannotationsPackage.MARKING__VALUE, oldValue, value));
 	}
 
 	/**
@@ -118,7 +118,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TechsimannotationsPackage.MARKING__VALUE:
+			case YawlannotationsPackage.MARKING__VALUE:
 				return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -132,7 +132,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TechsimannotationsPackage.MARKING__VALUE:
+			case YawlannotationsPackage.MARKING__VALUE:
 				setValue((Integer)newValue);
 				return;
 		}
@@ -147,7 +147,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.MARKING__VALUE:
+			case YawlannotationsPackage.MARKING__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
 		}
@@ -162,7 +162,7 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TechsimannotationsPackage.MARKING__VALUE:
+			case YawlannotationsPackage.MARKING__VALUE:
 				return value != VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);

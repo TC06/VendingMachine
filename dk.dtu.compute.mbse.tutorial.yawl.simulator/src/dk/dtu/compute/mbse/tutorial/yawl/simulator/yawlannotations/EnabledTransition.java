@@ -78,6 +78,32 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * @generated
 	 */
 	EnabledTransition getResolved();
+	
+	/**
+	 * Returns the value of the '<em><b>Enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Enabled</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Enabled</em>' attribute.
+	 * @see #setEnabled(boolean)
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Enabled()
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean isEnabled();
+	
+	/**
+	 * Sets the value of the '{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#isEnabled <em>Enabled</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Enabled</em>' attribute.
+	 * @see #isEnabled()
+	 * @generated
+	 */
+	void setEnabled(boolean value);
 
 	/**
 	 * Sets the value of the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolved <em>Resolved</em>}' reference.
@@ -96,5 +122,23 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * @generated
 	 */
 	Transition getAction();
+	
+	/**
+	 * Returns the value of the '<em><b>Refs</b></em>' reference list.
+	 * The list contents are of type {@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition}.
+	 * It is bidirectional and its opposite is '{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getResolve <em>Resolve</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Refs</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Refs</em>' reference list.
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getEnabledTransition_Refs()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getResolve
+	 * @model opposite="resolve"
+	 * @generated
+	 */
+	EList<EnabledTransition> getRefs();
 
 } // EnabledTransition

@@ -112,6 +112,15 @@ public interface YawlannotationsPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENABLED_TRANSITION__IN_ARCS = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 2;
+	
+	/**
+	 * The feature id for the '<em><b>Enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENABLED_TRANSITION__ENABLED = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Enabled Transition</em>' class.
@@ -120,8 +129,13 @@ public interface YawlannotationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENABLED_TRANSITION_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 3;
-
+	int ENABLED_TRANSITION_FEATURE_COUNT = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 4;
+	
+	/**
+	 * @author Tolga
+	 */
+	int ENABLED_TRANSITION__REFS = NetannotationsPackage.OBJECT_ANNOTATION_FEATURE_COUNT + 5;
+	
 	/**
 	 * The meta object id for the '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.SelectArcImpl <em>Select Arc</em>}' class.
 	 * <!-- begin-user-doc -->

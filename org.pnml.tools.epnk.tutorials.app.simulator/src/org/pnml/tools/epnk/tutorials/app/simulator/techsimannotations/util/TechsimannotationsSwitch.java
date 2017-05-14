@@ -23,7 +23,7 @@ import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.*;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage
  * @generated
  */
 public class TechsimannotationsSwitch<T> extends Switch<T> {
@@ -33,7 +33,7 @@ public class TechsimannotationsSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static TechsimannotationsPackage modelPackage;
+	protected static YawlannotationsPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -43,7 +43,7 @@ public class TechsimannotationsSwitch<T> extends Switch<T> {
 	 */
 	public TechsimannotationsSwitch() {
 		if (modelPackage == null) {
-			modelPackage = TechsimannotationsPackage.eINSTANCE;
+			modelPackage = YawlannotationsPackage.eINSTANCE;
 		}
 	}
 
@@ -70,7 +70,7 @@ public class TechsimannotationsSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case TechsimannotationsPackage.MARKING: {
+			case YawlannotationsPackage.MARKING: {
 				Marking marking = (Marking)theEObject;
 				T result = caseMarking(marking);
 				if (result == null) result = caseObjectAnnotation(marking);
@@ -79,7 +79,7 @@ public class TechsimannotationsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TechsimannotationsPackage.ENABLED_TRANSITION: {
+			case YawlannotationsPackage.ENABLED_TRANSITION: {
 				EnabledTransition enabledTransition = (EnabledTransition)theEObject;
 				T result = caseEnabledTransition(enabledTransition);
 				if (result == null) result = caseObjectAnnotation(enabledTransition);
@@ -87,7 +87,7 @@ public class TechsimannotationsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TechsimannotationsPackage.INVOLVED_ARC: {
+			case YawlannotationsPackage.INVOLVED_ARC: {
 				InvolvedArc involvedArc = (InvolvedArc)theEObject;
 				T result = caseInvolvedArc(involvedArc);
 				if (result == null) result = caseObjectAnnotation(involvedArc);

@@ -18,7 +18,7 @@ import org.pnml.tools.epnk.annotations.netannotations.ObjectAnnotation;
  *   <li>{@link org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc#isActive <em>Active</em>}</li>
  * </ul>
  *
- * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getInvolvedArc()
+ * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getInvolvedArc()
  * @model
  * @generated
  */
@@ -34,7 +34,7 @@ public interface InvolvedArc extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target</em>' container reference.
 	 * @see #setTarget(EnabledTransition)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getInvolvedArc_Target()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getInvolvedArc_Target()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getIn
 	 * @model opposite="in" transient="false"
 	 * @generated
@@ -62,7 +62,7 @@ public interface InvolvedArc extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Source</em>' container reference.
 	 * @see #setSource(EnabledTransition)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getInvolvedArc_Source()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getInvolvedArc_Source()
 	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition#getOut
 	 * @model opposite="out" transient="false"
 	 * @generated
@@ -89,7 +89,7 @@ public interface InvolvedArc extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Active</em>' attribute.
 	 * @see #setActive(boolean)
-	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsPackage#getInvolvedArc_Active()
+	 * @see org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.YawlannotationsPackage#getInvolvedArc_Active()
 	 * @model required="true"
 	 * @generated
 	 */
