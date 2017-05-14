@@ -73,6 +73,7 @@ public class YAWLFunctions {
 				switch (type.getText()) {
 				case OR:
 					types[0] = TType.OR;
+					
 					break;
 				case XOR:
 					types[0] = TType.XOR;

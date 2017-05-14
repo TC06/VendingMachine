@@ -10,7 +10,7 @@
           </children>
           <children visible="true" type="2001" element="p2">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="430" y="225" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="430" y="285" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2001" element="p3">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
@@ -24,6 +24,9 @@
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
             <layoutConstraint xsi:type="notation:Bounds" x="545" y="225" width="-1" height="-1"/>
           </children>
+          <children xsi:type="notation:Shape" visible="true" type="2001" element="pzirt" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
+            <layoutConstraint xsi:type="notation:Bounds" x="435" y="160" width="-1" height="-1"/>
+          </children>
           <styles xsi:type="notation:DiagramStyle" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
           <edges visible="true" type="4001" element="a1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3">
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
@@ -33,13 +36,22 @@
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
             <bendpoints xsi:type="notation:RelativeBendpoints"/>
           </edges>
-          <edges visible="true" type="4001" element="a3" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4">
-            <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints"/>
-          </edges>
           <edges visible="true" type="4001" element="a4" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2">
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
             <bendpoints xsi:type="notation:RelativeBendpoints"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirt1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[20, -11, -124, 65]$[137, -80, -7, -4]"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.225,0.35)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirt2" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[17, 9, -93, -56]$[108, 45, -2, -20]"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="aaaaaaa" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[18, -9, -97, 51]$[115, -40, 0, 20]"/>
           </edges>
         </diagram>
       </toolspecific>
@@ -54,7 +66,7 @@
       </place>
       <place id="p2">
         <graphics>
-          <position x="450.0" y="245.0"/>
+          <position x="450.0" y="305.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
         <placetype/>
@@ -73,12 +85,18 @@
           <position x="300.0" y="250.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
+        <splitType>
+          <text>XOR</text>
+        </splitType>
       </transition>
       <transition id="t2">
         <graphics>
           <position x="565.0" y="245.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
+        <joinType>
+          <text>XOR</text>
+        </joinType>
       </transition>
       <arc id="a1" source="p1" target="t1">
         <graphics/>
@@ -87,11 +105,40 @@
       <arc id="a2" source="t1" target="p2">
         <graphics/>
       </arc>
-      <arc id="a3" source="p2" target="t2">
-        <graphics/>
-      </arc>
       <arc id="a4" source="t2" target="p3">
         <graphics/>
+      </arc>
+      <place id="pzirt">
+        <graphics>
+          <position x="455.0" y="180.0"/>
+          <dimension x="40.0" y="40.0"/>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <fill color="#ffffff"/>
+        </graphics>
+        <placetype/>
+      </place>
+      <arc id="zirt1" source="t1" target="pzirt">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="320.0" y="239.0"/>
+          <position x="437.0" y="170.0"/>
+        </graphics>
+        <arctype/>
+      </arc>
+      <arc id="zirt2" source="pzirt" target="t2">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="472.0" y="189.0"/>
+          <position x="563.0" y="225.0"/>
+        </graphics>
+        <arctype/>
+      </arc>
+      <arc id="aaaaaaa" source="p2" target="t2">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="468.0" y="296.0"/>
+          <position x="565.0" y="265.0"/>
+        </graphics>
       </arc>
     </page>
   </net>
