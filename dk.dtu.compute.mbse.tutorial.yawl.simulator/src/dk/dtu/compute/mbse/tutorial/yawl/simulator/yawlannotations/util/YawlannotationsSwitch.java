@@ -78,11 +78,11 @@ public class YawlannotationsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case YawlannotationsPackage.INVOLVED_ARC: {
-				InvolvedArc involvedArc = (InvolvedArc)theEObject;
-				T result = caseInvolvedArc(involvedArc);
-				if (result == null) result = caseObjectAnnotation(involvedArc);
-				if (result == null) result = caseAnnotation(involvedArc);
+			case YawlannotationsPackage.SELECT_ARC: {
+				SelectArc selectArc = (SelectArc)theEObject;
+				T result = caseSelectArc(selectArc);
+				if (result == null) result = caseObjectAnnotation(selectArc);
+				if (result == null) result = caseAnnotation(selectArc);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -115,17 +115,17 @@ public class YawlannotationsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Involved Arc</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Select Arc</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Involved Arc</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Select Arc</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInvolvedArc(InvolvedArc object) {
+	public T caseSelectArc(SelectArc object) {
 		return null;
 	}
 

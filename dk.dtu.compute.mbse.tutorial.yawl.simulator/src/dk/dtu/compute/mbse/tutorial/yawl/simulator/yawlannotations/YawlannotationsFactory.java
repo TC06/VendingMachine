@@ -31,13 +31,13 @@ public interface YawlannotationsFactory extends EFactory {
 	EnabledTransition createEnabledTransition();
 
 	/**
-	 * Returns a new object of class '<em>Involved Arc</em>'.
+	 * Returns a new object of class '<em>Select Arc</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Involved Arc</em>'.
+	 * @return a new object of class '<em>Select Arc</em>'.
 	 * @generated
 	 */
-	InvolvedArc createInvolvedArc();
+	SelectArc createSelectArc();
 
 	/**
 	 * Returns a new object of class '<em>Marking</em>'.

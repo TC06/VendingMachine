@@ -15,11 +15,11 @@ import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
  * @author ekki@dtu.dk
  *
  */
-public class InvolvedArcHandler implements IActionHandler {
+public class SelectArcHandler implements IActionHandler {
 
 	private YAWLSimulator application;
 	
-	public InvolvedArcHandler(YAWLSimulator application) {
+	public SelectArcHandler(YAWLSimulator application) {
 		super();		
 		this.application = application;
 	}

@@ -76,8 +76,8 @@ public class YawlannotationsAdapterFactory extends AdapterFactoryImpl {
 				return createEnabledTransitionAdapter();
 			}
 			@Override
-			public Adapter caseInvolvedArc(InvolvedArc object) {
-				return createInvolvedArcAdapter();
+			public Adapter caseSelectArc(SelectArc object) {
+				return createSelectArcAdapter();
 			}
 			@Override
 			public Adapter caseMarking(Marking object) {
@@ -130,16 +130,16 @@ public class YawlannotationsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc <em>Involved Arc</em>}'.
+	 * Creates a new adapter for an object of class '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc <em>Select Arc</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc
 	 * @generated
 	 */
-	public Adapter createInvolvedArcAdapter() {
+	public Adapter createSelectArcAdapter() {
 		return null;
 	}
 

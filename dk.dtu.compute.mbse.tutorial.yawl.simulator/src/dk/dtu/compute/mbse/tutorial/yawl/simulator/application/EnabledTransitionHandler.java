@@ -11,6 +11,8 @@ import org.pnml.tools.epnk.applications.ui.IActionHandler;
 import org.pnml.tools.epnk.helpers.NetFunctions;
 import org.pnml.tools.epnk.pnmlcoremodel.TransitionNode;
 // TODO EnabledTransition should eventually be replaced by your own annotations (Tutorial 8)
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.InvolvedArc;
 
 import dk.dtu.compute.mbse.yawl.Arc;
 //TODO Action is in probably dk.dtu.compute.mbse.yawl.Transition in your cases

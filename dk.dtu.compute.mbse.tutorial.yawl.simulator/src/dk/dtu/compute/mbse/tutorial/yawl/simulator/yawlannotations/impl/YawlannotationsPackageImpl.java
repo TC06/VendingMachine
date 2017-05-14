@@ -3,14 +3,13 @@
 package dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
-import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsFactory;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -39,7 +38,7 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass involvedArcEClass = null;
+	private EClass selectArcEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,15 +126,6 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * @generated
 	 */
 	public EReference getEnabledTransition_OutArcs() {
-		return (EReference)enabledTransitionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getEnabledTransition_InArcs() {
 		return (EReference)enabledTransitionEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -144,7 +134,7 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEnabledTransition_Resolved() {
+	public EReference getEnabledTransition_InArcs() {
 		return (EReference)enabledTransitionEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -153,8 +143,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEnabledTransition__GetAction() {
-		return enabledTransitionEClass.getEOperations().get(0);
+	public EReference getEnabledTransition_Resolved() {
+		return (EReference)enabledTransitionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -162,8 +152,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getInvolvedArc() {
-		return involvedArcEClass;
+	public EClass getSelectArc() {
+		return selectArcEClass;
 	}
 
 	/**
@@ -171,8 +161,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInvolvedArc_Selected() {
-		return (EAttribute)involvedArcEClass.getEStructuralFeatures().get(0);
+	public EAttribute getSelectArc_Selected() {
+		return (EAttribute)selectArcEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -180,8 +170,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInvolvedArc_SourceTransition() {
-		return (EReference)involvedArcEClass.getEStructuralFeatures().get(1);
+	public EReference getSelectArc_SourceTransition() {
+		return (EReference)selectArcEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -189,8 +179,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInvolvedArc_TargetTransition() {
-		return (EReference)involvedArcEClass.getEStructuralFeatures().get(2);
+	public EReference getSelectArc_TargetTransition() {
+		return (EReference)selectArcEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -198,8 +188,8 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInvolvedArc_SourceMarking() {
-		return (EReference)involvedArcEClass.getEStructuralFeatures().get(3);
+	public EReference getSelectArc_SourceMarking() {
+		return (EReference)selectArcEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -249,16 +239,15 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 
 		// Create classes and their features
 		enabledTransitionEClass = createEClass(ENABLED_TRANSITION);
+		createEReference(enabledTransitionEClass, ENABLED_TRANSITION__RESOLVED);
 		createEReference(enabledTransitionEClass, ENABLED_TRANSITION__OUT_ARCS);
 		createEReference(enabledTransitionEClass, ENABLED_TRANSITION__IN_ARCS);
-		createEReference(enabledTransitionEClass, ENABLED_TRANSITION__RESOLVED);
-		createEOperation(enabledTransitionEClass, ENABLED_TRANSITION___GET_ACTION);
 
-		involvedArcEClass = createEClass(INVOLVED_ARC);
-		createEAttribute(involvedArcEClass, INVOLVED_ARC__SELECTED);
-		createEReference(involvedArcEClass, INVOLVED_ARC__SOURCE_TRANSITION);
-		createEReference(involvedArcEClass, INVOLVED_ARC__TARGET_TRANSITION);
-		createEReference(involvedArcEClass, INVOLVED_ARC__SOURCE_MARKING);
+		selectArcEClass = createEClass(SELECT_ARC);
+		createEAttribute(selectArcEClass, SELECT_ARC__SELECTED);
+		createEReference(selectArcEClass, SELECT_ARC__SOURCE_MARKING);
+		createEReference(selectArcEClass, SELECT_ARC__SOURCE_TRANSITION);
+		createEReference(selectArcEClass, SELECT_ARC__TARGET_TRANSITION);
 
 		markingEClass = createEClass(MARKING);
 		createEAttribute(markingEClass, MARKING__VALUE);
@@ -297,23 +286,23 @@ public class YawlannotationsPackageImpl extends EPackageImpl implements Yawlanno
 
 		// Add supertypes to classes
 		enabledTransitionEClass.getESuperTypes().add(theNetannotationsPackage.getObjectAnnotation());
-		involvedArcEClass.getESuperTypes().add(theNetannotationsPackage.getObjectAnnotation());
+		selectArcEClass.getESuperTypes().add(theNetannotationsPackage.getObjectAnnotation());
 		markingEClass.getESuperTypes().add(theNetannotationsPackage.getObjectAnnotation());
 		markingEClass.getESuperTypes().add(theNetannotationsPackage.getTextualAnnotation());
 
-		// Initialize classes, features, and operations; add parameters
+		// Initialize classes and features; add operations and parameters
 		initEClass(enabledTransitionEClass, EnabledTransition.class, "EnabledTransition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEnabledTransition_OutArcs(), this.getInvolvedArc(), this.getInvolvedArc_SourceTransition(), "outArcs", null, 0, -1, EnabledTransition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEnabledTransition_InArcs(), this.getInvolvedArc(), this.getInvolvedArc_TargetTransition(), "inArcs", null, 0, -1, EnabledTransition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnabledTransition_Resolved(), this.getEnabledTransition(), null, "resolved", null, 0, 1, EnabledTransition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEnabledTransition_OutArcs(), this.getSelectArc(), this.getSelectArc_SourceTransition(), "outArcs", null, 0, -1, EnabledTransition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEnabledTransition_InArcs(), this.getSelectArc(), this.getSelectArc_TargetTransition(), "inArcs", null, 0, -1, EnabledTransition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEOperation(getEnabledTransition__GetAction(), thePnmlcoremodelPackage.getTransition(), "getAction", 1, 1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(enabledTransitionEClass, thePnmlcoremodelPackage.getTransition(), "getAction", 1, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(involvedArcEClass, InvolvedArc.class, "InvolvedArc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInvolvedArc_Selected(), ecorePackage.getEBoolean(), "selected", "false", 1, 1, InvolvedArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInvolvedArc_SourceTransition(), this.getEnabledTransition(), this.getEnabledTransition_OutArcs(), "sourceTransition", null, 0, 1, InvolvedArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInvolvedArc_TargetTransition(), this.getEnabledTransition(), this.getEnabledTransition_InArcs(), "targetTransition", null, 0, 1, InvolvedArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInvolvedArc_SourceMarking(), this.getMarking(), null, "sourceMarking", null, 0, 1, InvolvedArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(selectArcEClass, SelectArc.class, "SelectArc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSelectArc_Selected(), ecorePackage.getEBoolean(), "selected", "false", 1, 1, SelectArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSelectArc_SourceMarking(), this.getMarking(), null, "sourceMarking", null, 0, 1, SelectArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSelectArc_SourceTransition(), this.getEnabledTransition(), this.getEnabledTransition_OutArcs(), "sourceTransition", null, 0, 1, SelectArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSelectArc_TargetTransition(), this.getEnabledTransition(), this.getEnabledTransition_InArcs(), "targetTransition", null, 0, 1, SelectArc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(markingEClass, Marking.class, "Marking", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMarking_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Marking.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

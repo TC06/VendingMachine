@@ -17,9 +17,9 @@ import org.pnml.tools.epnk.pnmlcoremodel.Transition;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolved <em>Resolved</em>}</li>
  *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getOutArcs <em>Out Arcs</em>}</li>
  *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getInArcs <em>In Arcs</em>}</li>
- *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition#getResolved <em>Resolved</em>}</li>
  * </ul>
  *
  * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage#getEnabledTransition()
@@ -29,8 +29,8 @@ import org.pnml.tools.epnk.pnmlcoremodel.Transition;
 public interface EnabledTransition extends ObjectAnnotation {
 	/**
 	 * Returns the value of the '<em><b>Out Arcs</b></em>' reference list.
-	 * The list contents are of type {@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc}.
-	 * It is bidirectional and its opposite is '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceTransition <em>Source Transition</em>}'.
+	 * The list contents are of type {@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc}.
+	 * It is bidirectional and its opposite is '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc#getSourceTransition <em>Source Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Out Arcs</em>' reference list isn't clear,
@@ -39,16 +39,16 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Out Arcs</em>' reference list.
 	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage#getEnabledTransition_OutArcs()
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getSourceTransition
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc#getSourceTransition
 	 * @model opposite="sourceTransition"
 	 * @generated
 	 */
-	EList<InvolvedArc> getOutArcs();
+	EList<SelectArc> getOutArcs();
 
 	/**
 	 * Returns the value of the '<em><b>In Arcs</b></em>' reference list.
-	 * The list contents are of type {@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc}.
-	 * It is bidirectional and its opposite is '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTargetTransition <em>Target Transition</em>}'.
+	 * The list contents are of type {@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc}.
+	 * It is bidirectional and its opposite is '{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc#getTargetTransition <em>Target Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>In Arcs</em>' reference list isn't clear,
@@ -57,11 +57,11 @@ public interface EnabledTransition extends ObjectAnnotation {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>In Arcs</em>' reference list.
 	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage#getEnabledTransition_InArcs()
-	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc#getTargetTransition
+	 * @see dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc#getTargetTransition
 	 * @model opposite="targetTransition"
 	 * @generated
 	 */
-	EList<InvolvedArc> getInArcs();
+	EList<SelectArc> getInArcs();
 
 	/**
 	 * Returns the value of the '<em><b>Resolved</b></em>' reference.

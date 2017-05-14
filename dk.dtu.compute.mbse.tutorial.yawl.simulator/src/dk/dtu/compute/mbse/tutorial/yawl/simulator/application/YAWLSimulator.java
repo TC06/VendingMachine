@@ -13,9 +13,11 @@ import org.pnml.tools.epnk.pnmlcoremodel.Place;
 import org.pnml.tools.epnk.pnmlcoremodel.PlaceNode;
 import org.pnml.tools.epnk.pnmlcoremodel.RefPlace;
 import org.pnml.tools.epnk.pnmlcoremodel.RefTransition;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.EnabledTransition;
+import org.pnml.tools.epnk.tutorials.app.simulator.techsimannotations.TechsimannotationsFactory;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.marking.NetMarking;
-import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
+//import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsFactory;
 import dk.dtu.compute.mbse.yawl.AType;
@@ -45,7 +47,7 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 		getNetAnnotations().setName("A simple YAWL simulator");
 		ApplicationUIManager manager = this.getPresentationManager();
 		manager.addActionHandler(new EnabledTransitionHandler(this));
-		manager.addActionHandler(new InvolvedArcHandler(this));
+		manager.addActionHandler(new SelectArcHandler(this));
 		manager.addPresentationHandler(new YAWLAnnotationsPresentationHandler());
 
 		adapter = new NetChangeListener(this);
@@ -124,13 +126,13 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 			if (object instanceof Transition) {
 				Transition transition = (Transition) object;
 				if (isEnabled(marking, transition)) {
-					EnabledTransition enabledTransition = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
+					EnabledTransition enabledTransition = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
 					enabledTransition.setObject(transition);
 					annotation.getObjectAnnotations().add(enabledTransition);
 					enabledTransition.setEnabled(true);
 
 					for (RefTransition refTransition: getFlatAccess().getRefTransitions(transition)) {
-						EnabledTransition enabledTransition2 = YawlannotationsFactory.eINSTANCE.createEnabledTransition();
+						EnabledTransition enabledTransition2 = TechsimannotationsFactory.eINSTANCE.createEnabledTransition();
 						enabledTransition2.setObject(refTransition);
 						enabledTransition2.setResolve(enabledTransition);
 						enabledTransition2.setEnabled(enabledTransition.isEnabled());

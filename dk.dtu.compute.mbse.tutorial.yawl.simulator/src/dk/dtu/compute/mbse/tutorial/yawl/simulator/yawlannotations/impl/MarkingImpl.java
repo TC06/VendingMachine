@@ -4,21 +4,11 @@ package dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.Marking;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage;
-
-import java.lang.reflect.InvocationTargetException;
-
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.pnml.tools.epnk.annotations.netannotations.NetannotationsPackage;
-import org.pnml.tools.epnk.annotations.netannotations.TextualAnnotation;
-
 import org.pnml.tools.epnk.annotations.netannotations.impl.ObjectAnnotationImpl;
 
 /**
@@ -173,36 +163,6 @@ public class MarkingImpl extends ObjectAnnotationImpl implements Marking {
 				return value != VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
-		if (baseClass == TextualAnnotation.class) {
-			switch (baseOperationID) {
-				case NetannotationsPackage.TEXTUAL_ANNOTATION___GET_ANNOTATION_ATTRIBUTE: return YawlannotationsPackage.MARKING___GET_ANNOTATION_ATTRIBUTE;
-				default: return -1;
-			}
-		}
-		return super.eDerivedOperationID(baseOperationID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case YawlannotationsPackage.MARKING___GET_ANNOTATION_ATTRIBUTE:
-				return getAnnotationAttribute();
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

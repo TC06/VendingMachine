@@ -3,11 +3,8 @@
 package dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl;
 
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.EnabledTransition;
-import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.InvolvedArc;
+import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.YawlannotationsPackage;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -35,34 +32,14 @@ import org.pnml.tools.epnk.pnmlcoremodel.Transition;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl#getResolved <em>Resolved</em>}</li>
  *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl#getOutArcs <em>Out Arcs</em>}</li>
  *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl#getInArcs <em>In Arcs</em>}</li>
- *   <li>{@link dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.impl.EnabledTransitionImpl#getResolved <em>Resolved</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class EnabledTransitionImpl extends ObjectAnnotationImpl implements EnabledTransition {
-	/**
-	 * The cached value of the '{@link #getOutArcs() <em>Out Arcs</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOutArcs()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<InvolvedArc> outArcs;
-
-	/**
-	 * The cached value of the '{@link #getInArcs() <em>In Arcs</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInArcs()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<InvolvedArc> inArcs;
-
 	/**
 	 * The cached value of the '{@link #getResolved() <em>Resolved</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -72,6 +49,26 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 * @ordered
 	 */
 	protected EnabledTransition resolved;
+
+	/**
+	 * The cached value of the '{@link #getOutArcs() <em>Out Arcs</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOutArcs()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<SelectArc> outArcs;
+
+	/**
+	 * The cached value of the '{@link #getInArcs() <em>In Arcs</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInArcs()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<SelectArc> inArcs;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,9 +94,9 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InvolvedArc> getOutArcs() {
+	public EList<SelectArc> getOutArcs() {
 		if (outArcs == null) {
-			outArcs = new EObjectWithInverseResolvingEList<InvolvedArc>(InvolvedArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS, YawlannotationsPackage.INVOLVED_ARC__SOURCE_TRANSITION);
+			outArcs = new EObjectWithInverseResolvingEList<SelectArc>(SelectArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS, YawlannotationsPackage.SELECT_ARC__SOURCE_TRANSITION);
 		}
 		return outArcs;
 	}
@@ -109,9 +106,9 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InvolvedArc> getInArcs() {
+	public EList<SelectArc> getInArcs() {
 		if (inArcs == null) {
-			inArcs = new EObjectWithInverseResolvingEList<InvolvedArc>(InvolvedArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS, YawlannotationsPackage.INVOLVED_ARC__TARGET_TRANSITION);
+			inArcs = new EObjectWithInverseResolvingEList<SelectArc>(SelectArc.class, this, YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS, YawlannotationsPackage.SELECT_ARC__TARGET_TRANSITION);
 		}
 		return inArcs;
 	}
@@ -206,13 +203,13 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
+				if (resolve) return getResolved();
+				return basicGetResolved();
 			case YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS:
 				return getOutArcs();
 			case YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS:
 				return getInArcs();
-			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
-				if (resolve) return getResolved();
-				return basicGetResolved();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -226,16 +223,16 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
+				setResolved((EnabledTransition)newValue);
+				return;
 			case YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS:
 				getOutArcs().clear();
-				getOutArcs().addAll((Collection<? extends InvolvedArc>)newValue);
+				getOutArcs().addAll((Collection<? extends SelectArc>)newValue);
 				return;
 			case YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS:
 				getInArcs().clear();
-				getInArcs().addAll((Collection<? extends InvolvedArc>)newValue);
-				return;
-			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
-				setResolved((EnabledTransition)newValue);
+				getInArcs().addAll((Collection<? extends SelectArc>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -249,14 +246,14 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
+				setResolved((EnabledTransition)null);
+				return;
 			case YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS:
 				getOutArcs().clear();
 				return;
 			case YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS:
 				getInArcs().clear();
-				return;
-			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
-				setResolved((EnabledTransition)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -270,28 +267,14 @@ public class EnabledTransitionImpl extends ObjectAnnotationImpl implements Enabl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
+				return resolved != null;
 			case YawlannotationsPackage.ENABLED_TRANSITION__OUT_ARCS:
 				return outArcs != null && !outArcs.isEmpty();
 			case YawlannotationsPackage.ENABLED_TRANSITION__IN_ARCS:
 				return inArcs != null && !inArcs.isEmpty();
-			case YawlannotationsPackage.ENABLED_TRANSITION__RESOLVED:
-				return resolved != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case YawlannotationsPackage.ENABLED_TRANSITION___GET_ACTION:
-				return getAction();
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //EnabledTransitionImpl
