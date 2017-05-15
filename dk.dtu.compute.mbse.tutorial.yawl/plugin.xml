@@ -38,7 +38,7 @@
                   id="dk.dtu.compute.mbse.yawl.validation.correct-arc-connection"
                   isEnabledByDefault="true"
                   lang="OCL"
-                  mode="Batch"
+                  mode="Live"
                   name="Arc connection constraint for YAWL nets"
                   severity="ERROR"
                   statusCode="401">
@@ -97,7 +97,7 @@
             	lang="Java"
             	class="dk.dtu.compute.mbse.yawl.constraints.StartEndPlaces"
             	severity="ERROR"
-            	mode="Batch"
+            	mode="Live"
             	name="One start and end place"
             	id="dk.dtu.compute.mbse.yawl.validation.one-start-and-end-place"
             	statusCode="402">
@@ -114,7 +114,7 @@
             	lang="Java"
             	class="dk.dtu.compute.mbse.yawl.constraints.StartEndArcs"
             	severity="ERROR"
-            	mode="Batch"
+            	mode="Live"
             	name="Start places out arcs, end places in arcs"
             	id="dk.dtu.compute.mbse.yawl.validation.start-out-end-in-arcs"
             	statusCode="403">
@@ -131,7 +131,7 @@
             	lang="Java"
             	class="dk.dtu.compute.mbse.yawl.constraints.NoDuplicateArcs"
             	severity="ERROR"
-            	mode="Batch"
+            	mode="Live"
             	name="Duplicate arcs"
             	id="dk.dtu.compute.mbse.yawl.validation.duplicate-arcs"
             	statusCode="404">
