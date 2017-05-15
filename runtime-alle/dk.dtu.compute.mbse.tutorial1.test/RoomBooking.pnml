@@ -6,149 +6,169 @@
         <diagram visible="true" type="PNMLCoreModel" element="pg" name="Page pg" measurementUnit="Pixel">
           <children visible="true" type="2001" element="p1">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="48" y="44" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="88" y="44" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2001" element="p2">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="132" y="128" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="168" y="128" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2001" element="p3">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="132" y="252" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="204" y="252" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2003" element="t1">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="132" y="45" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="172" y="45" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2003" element="t2">
             <styles xsi:type="notation:ShapeStyle" fontColor="0" fontName="Tahoma" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="308" y="44" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="380" y="44" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="pzirt" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="220" y="44" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="292" y="44" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p4" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="400" y="45" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="472" y="45" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t3" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="500" y="40" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="572" y="40" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p5" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="423" y="99" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="495" y="99" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p6" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="548" y="108" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="620" y="108" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t4" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="351" y="144" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="423" y="144" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p7" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="500" y="252" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="572" y="252" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t5" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="368" y="248" width="46" height="49"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="440" y="248" width="46" height="49"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p8" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="292" y="208" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="364" y="208" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p9" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="296" y="296" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="368" y="296" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t6" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="224" y="252" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="296" y="252" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t7" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="48" y="128" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="84" y="128" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2001" element="p10" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="613" y="113" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="685" y="113" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.0">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="135" y="27" width="28" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="207" y="27" width="28" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.1">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="126" y="171" width="55" height="19"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="212" y="112" width="55" height="19"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.2">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="297" y="27" width="55" height="10"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="369" y="27" width="55" height="10"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.3">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="459" y="27" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="531" y="27" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.4">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="216" y="162" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="288" y="162" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.5">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="315" y="99" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="316" y="112" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.6">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="486" y="207" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="558" y="207" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.7">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="333" y="198" width="100" height="10"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="405" y="198" width="100" height="10"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.8">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="288" y="351" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="360" y="351" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.9">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="414" y="306" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="486" y="306" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.10">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="195" y="322" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="267" y="322" width="-1" height="-1"/>
           </children>
           <children xsi:type="notation:Shape" visible="true" type="2003" element="t8" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
-            <layoutConstraint xsi:type="notation:Bounds" x="27" y="-54" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="224" y="172" width="-1" height="-1"/>
           </children>
           <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.11">
             <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
             <styles xsi:type="notation:DescriptionStyle" description=""/>
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
-            <layoutConstraint xsi:type="notation:Bounds" x="90" y="-45" width="-1" height="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="184" y="200" width="-1" height="-1"/>
+          </children>
+          <children xsi:type="notation:Shape" visible="true" type="2001" element="p11" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
+            <layoutConstraint xsi:type="notation:Bounds" x="0" y="128" width="-1" height="-1"/>
+          </children>
+          <children xsi:type="notation:Shape" visible="true" type="2003" element="t9" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false" description="" fillColor="16777215" transparency="-1" lineColor="11579568" lineWidth="-1" roundedBendpointsRadius="0">
+            <layoutConstraint xsi:type="notation:Bounds" x="4" y="44" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.12">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
+            <styles xsi:type="notation:DescriptionStyle" description=""/>
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="20" y="24" width="-1" height="-1"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.13">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
+            <styles xsi:type="notation:DescriptionStyle" description=""/>
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="94" y="175" width="-1" height="-1"/>
           </children>
           <styles xsi:type="notation:DiagramStyle" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
           <edges visible="true" type="4001" element="a1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3">
@@ -158,11 +178,6 @@
           <edges visible="true" type="4001" element="a2" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.1">
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1"/>
             <bendpoints xsi:type="notation:RelativeBendpoints"/>
-          </edges>
-          <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirt1" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
-            <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints" points="[20, 0, -76, 7]$[68, 0, -28, 7]$[87, 0, -9, 7]"/>
-            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.225,0.35)"/>
           </edges>
           <edges xsi:type="notation:Connector" visible="true" type="4001" element="zirt2" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.4" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName="Segoe UI" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
@@ -293,14 +308,14 @@
             <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -21, -27]$[14, 47, -7, 20]"/>
             <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.53,1.0)"/>
           </edges>
-          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.23" target="//@net.0/@page.0/@toolspecific.0/@diagram/@edges.11" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.23" target="//@net.0/@page.0/@toolspecific.0/@diagram/@edges.10" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <element xsi:nil="true"/>
             <bendpoints xsi:type="notation:RelativeBendpoints" points="[-10, 0, 23, -2]$[-36, -4, -3, -6]"/>
             <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.1,0.8181818181818182)"/>
             <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.4126984126984127,0.4482758620689655)"/>
           </edges>
-          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.24" target="//@net.0/@page.0/@toolspecific.0/@diagram/@edges.12" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.24" target="//@net.0/@page.0/@toolspecific.0/@diagram/@edges.11" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
             <element xsi:nil="true"/>
             <bendpoints xsi:type="notation:RelativeBendpoints" points="[-23, 3, 19, 1]$[-42, 1, 0, -1]"/>
@@ -334,12 +349,12 @@
           </edges>
           <edges xsi:type="notation:Connector" visible="true" type="4001" element="a21" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.29" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, -20, 130, 78]$[0, -91, 130, 7]$[-110, -91, 20, 7]"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[-10, 17, 58, -111]$[-58, 108, 10, -20]"/>
           </edges>
           <edges xsi:type="notation:Connector" visible="true" type="4001" element="a22" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.29" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
-            <bendpoints xsi:type="notation:RelativeBendpoints" points="[9, 4, -116, -286]$[9, 290, -116, 0]$[105, 290, -20, 0]"/>
-            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.0,0.9)"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[8, 4, 0, -32]$[8, 16, 0, -20]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.375,0.8)"/>
           </edges>
           <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.30" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.29" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
             <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
@@ -347,45 +362,72 @@
             <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 6, 43]$[0, -23, 6, 20]"/>
             <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.46,0.0)"/>
           </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a23" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.31" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.32" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[-2, -20, -6, 64]$[-2, -104, -6, -20]"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a24" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.32" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.0" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[10, 9, -64, -3]$[72, -8, -2, -20]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.925,0.5)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4001" element="a25" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.3" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.5" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[6, 0, -100, 0]$[86, 0, -20, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.85,0.475)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.33" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.32" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 66, -18]$[-66, 9, 0, -9]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.43,1.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.525,0.225)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.34" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.16" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="11579568" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 31, 27]$[-51, -27, -20, 0]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.41,0.0)"/>
+          </edges>
         </diagram>
         <labelProxy label="//@net.0/@page.0/@object.3/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.1/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.4/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.13/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.19/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.22/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.12/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.18/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.21/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.23/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.26/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.28/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.24/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.27/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.29/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.25/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.31/@name"/>
-        <labelProxy label="//@net.0/@page.0/@object.40/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.30/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.39/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.43/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.34/@name"/>
       </toolspecific>
       <place id="p1">
         <graphics>
-          <position x="68.0" y="64.0"/>
+          <position x="108.0" y="64.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
-        <placetype>
-          <text>START</text>
-        </placetype>
+        <placetype/>
       </place>
       <place id="p2">
         <name>
           <graphics>
-            <offset x="-26.0" y="23.0"/>
+            <offset x="24.0" y="-36.0"/>
           </graphics>
           <text>Login afvist</text>
         </name>
         <graphics>
-          <position x="152.0" y="148.0"/>
+          <position x="188.0" y="148.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
         <placetype/>
       </place>
       <place id="p3">
         <graphics>
-          <position x="152.0" y="272.0"/>
+          <position x="224.0" y="272.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
         <placetype>
@@ -395,17 +437,18 @@
       <transition id="t1">
         <name>
           <graphics>
-            <offset x="-17.0" y="-38.0"/>
+            <offset x="15.0" y="-38.0"/>
           </graphics>
           <text>login</text>
         </name>
         <graphics>
-          <position x="152.0" y="65.0"/>
+          <position x="192.0" y="65.0"/>
           <dimension x="40.0" y="40.0"/>
         </graphics>
         <splitType>
           <text>XOR</text>
         </splitType>
+        <joinType/>
       </transition>
       <transition id="t2">
         <name>
@@ -415,7 +458,7 @@
           <text>Vælg rum</text>
         </name>
         <graphics>
-          <position x="328.0" y="64.0"/>
+          <position x="400.0" y="64.0"/>
           <dimension x="40.0" y="40.0"/>
           <fill image=""/>
         </graphics>
@@ -430,40 +473,31 @@
       </arc>
       <place id="pzirt">
         <graphics>
-          <position x="240.0" y="64.0"/>
+          <position x="312.0" y="64.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
         </graphics>
         <placetype/>
       </place>
-      <arc id="zirt1" source="t1" target="pzirt">
-        <graphics>
-          <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="172.0" y="65.0"/>
-          <position x="220.0" y="65.0"/>
-          <position x="239.0" y="65.0"/>
-        </graphics>
-        <arctype/>
-      </arc>
       <arc id="zirt2" source="pzirt" target="t2">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="257.0" y="73.0"/>
-          <position x="348.0" y="109.0"/>
+          <position x="329.0" y="73.0"/>
+          <position x="420.0" y="109.0"/>
         </graphics>
         <arctype/>
       </arc>
       <arc id="a3" source="p2" target="t7">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="152.0" y="148.0"/>
-          <position x="108.0" y="126.0"/>
+          <position x="188.0" y="148.0"/>
+          <position x="144.0" y="126.0"/>
         </graphics>
       </arc>
       <place id="p4">
         <graphics>
-          <position x="420.0" y="65.0"/>
+          <position x="492.0" y="65.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -472,9 +506,9 @@
       <arc id="a4" source="t2" target="p4">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="348.0" y="64.0"/>
-          <position x="388.0" y="64.0"/>
-          <position x="421.0" y="64.0"/>
+          <position x="420.0" y="64.0"/>
+          <position x="460.0" y="64.0"/>
+          <position x="493.0" y="64.0"/>
         </graphics>
       </arc>
       <transition id="t3">
@@ -485,7 +519,7 @@
           <text>Vælg dato,starttid og sluttid</text>
         </name>
         <graphics>
-          <position x="520.0" y="60.0"/>
+          <position x="592.0" y="60.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff" image=""/>
@@ -498,13 +532,13 @@
       <arc id="a5" source="p4" target="t3">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="421.0" y="72.0"/>
-          <position x="420.0" y="132.0"/>
+          <position x="493.0" y="72.0"/>
+          <position x="492.0" y="132.0"/>
         </graphics>
       </arc>
       <place id="p5">
         <graphics>
-          <position x="443.0" y="119.0"/>
+          <position x="515.0" y="119.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -513,14 +547,14 @@
       <arc id="a6" source="t3" target="p5">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="513.0" y="68.0"/>
-          <position x="483.0" y="68.0"/>
-          <position x="483.0" y="96.0"/>
+          <position x="585.0" y="68.0"/>
+          <position x="555.0" y="68.0"/>
+          <position x="555.0" y="96.0"/>
         </graphics>
       </arc>
       <place id="p6">
         <graphics>
-          <position x="568.0" y="128.0"/>
+          <position x="640.0" y="128.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -529,9 +563,9 @@
       <arc id="a7" source="t3" target="p6">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="527.0" y="60.0"/>
-          <position x="555.0" y="60.0"/>
-          <position x="555.0" y="91.0"/>
+          <position x="599.0" y="60.0"/>
+          <position x="627.0" y="60.0"/>
+          <position x="627.0" y="91.0"/>
         </graphics>
       </arc>
       <transition id="t4">
@@ -542,7 +576,7 @@
           <text>tjekker om den er optaget</text>
         </name>
         <graphics>
-          <position x="371.0" y="164.0"/>
+          <position x="443.0" y="164.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff" image=""/>
@@ -557,34 +591,34 @@
       <arc id="a8" source="p5" target="t4">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="442.0" y="119.0"/>
-          <position x="393.0" y="152.0"/>
+          <position x="514.0" y="119.0"/>
+          <position x="465.0" y="152.0"/>
         </graphics>
       </arc>
       <arc id="a9" source="p6" target="t4">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="548.0" y="131.0"/>
-          <position x="414.0" y="153.0"/>
-          <position x="391.0" y="166.0"/>
+          <position x="620.0" y="131.0"/>
+          <position x="486.0" y="153.0"/>
+          <position x="463.0" y="166.0"/>
         </graphics>
       </arc>
       <arc id="a10" source="t4" target="pzirt">
         <name>
           <graphics>
-            <offset x="68.0" y="-1.0"/>
+            <offset x="-3.0" y="12.0"/>
           </graphics>
           <text>Rummet er optaget</text>
         </name>
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="369.0" y="162.0"/>
-          <position x="126.0" y="39.0"/>
+          <position x="441.0" y="162.0"/>
+          <position x="198.0" y="39.0"/>
         </graphics>
       </arc>
       <place id="p7">
         <graphics>
-          <position x="520.0" y="272.0"/>
+          <position x="592.0" y="272.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -599,9 +633,9 @@
         </name>
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="391.0" y="179.0"/>
-          <position x="414.0" y="198.0"/>
-          <position x="503.0" y="260.0"/>
+          <position x="463.0" y="179.0"/>
+          <position x="486.0" y="198.0"/>
+          <position x="575.0" y="260.0"/>
         </graphics>
       </arc>
       <transition id="t5">
@@ -612,7 +646,7 @@
           <text>Valg af bekræftelses metode</text>
         </name>
         <graphics>
-          <position x="391.0" y="272.5"/>
+          <position x="463.0" y="272.5"/>
           <dimension x="46.0" y="49.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -625,8 +659,8 @@
       <arc id="a12" source="p7" target="t5">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="502.0" y="281.0"/>
-          <position x="366.0" y="355.0"/>
+          <position x="574.0" y="281.0"/>
+          <position x="438.0" y="355.0"/>
         </graphics>
       </arc>
       <place id="p8">
@@ -637,7 +671,7 @@
           <text>Email bekræftelse</text>
         </name>
         <graphics>
-          <position x="312.0" y="228.0"/>
+          <position x="384.0" y="228.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -646,9 +680,9 @@
       <arc id="a13" source="t5" target="p8">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="383.0" y="267.0"/>
-          <position x="383.0" y="247.0"/>
-          <position x="331.0" y="247.0"/>
+          <position x="455.0" y="267.0"/>
+          <position x="455.0" y="247.0"/>
+          <position x="403.0" y="247.0"/>
         </graphics>
       </arc>
       <place id="p9">
@@ -659,7 +693,7 @@
           <text>SMS bekræftelse</text>
         </name>
         <graphics>
-          <position x="316.0" y="316.0"/>
+          <position x="388.0" y="316.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -668,9 +702,9 @@
       <arc id="a14" source="t5" target="p9">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="391.0" y="273.0"/>
-          <position x="391.0" y="292.0"/>
-          <position x="334.0" y="292.0"/>
+          <position x="463.0" y="273.0"/>
+          <position x="463.0" y="292.0"/>
+          <position x="406.0" y="292.0"/>
         </graphics>
       </arc>
       <transition id="t6">
@@ -681,7 +715,7 @@
           <text>Rummet reserveres</text>
         </name>
         <graphics>
-          <position x="244.0" y="272.0"/>
+          <position x="316.0" y="272.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff" image=""/>
@@ -694,29 +728,35 @@
       <arc id="a15" source="p8" target="t6">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="292.0" y="228.0"/>
-          <position x="256.0" y="228.0"/>
-          <position x="256.0" y="252.0"/>
+          <position x="364.0" y="228.0"/>
+          <position x="328.0" y="228.0"/>
+          <position x="328.0" y="252.0"/>
         </graphics>
       </arc>
       <arc id="a16" source="p9" target="t6">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="316.0" y="300.0"/>
-          <position x="280.0" y="300.0"/>
-          <position x="280.0" y="276.0"/>
+          <position x="388.0" y="300.0"/>
+          <position x="352.0" y="300.0"/>
+          <position x="352.0" y="276.0"/>
         </graphics>
       </arc>
       <arc id="a17" source="t6" target="p3">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="243.0" y="268.0"/>
-          <position x="135.0" y="268.0"/>
+          <position x="315.0" y="268.0"/>
+          <position x="207.0" y="268.0"/>
         </graphics>
       </arc>
       <transition id="t7">
+        <name>
+          <graphics>
+            <offset x="-10.0" y="27.0"/>
+          </graphics>
+          <text>Login igen</text>
+        </name>
         <graphics>
-          <position x="68.0" y="148.0"/>
+          <position x="104.0" y="148.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -725,13 +765,13 @@
       <arc id="a18" source="t7" target="p1">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="68.0" y="139.0"/>
-          <position x="68.0" y="102.0"/>
+          <position x="104.0" y="139.0"/>
+          <position x="104.0" y="102.0"/>
         </graphics>
       </arc>
       <place id="p10">
         <graphics>
-          <position x="633.0" y="133.0"/>
+          <position x="705.0" y="133.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -740,28 +780,28 @@
       <arc id="a19" source="t3" target="p10">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="540.0" y="60.0"/>
-          <position x="633.0" y="60.0"/>
-          <position x="633.0" y="109.0"/>
+          <position x="612.0" y="60.0"/>
+          <position x="705.0" y="60.0"/>
+          <position x="705.0" y="109.0"/>
         </graphics>
       </arc>
       <arc id="a20" source="p10" target="t4">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="611.0" y="138.0"/>
-          <position x="610.0" y="157.0"/>
-          <position x="371.0" y="157.0"/>
+          <position x="683.0" y="138.0"/>
+          <position x="682.0" y="157.0"/>
+          <position x="443.0" y="157.0"/>
         </graphics>
       </arc>
       <transition id="t8">
         <name>
           <graphics>
-            <offset x="43.0" y="-11.0"/>
+            <offset x="-60.0" y="8.0"/>
           </graphics>
           <text>logud</text>
         </name>
         <graphics>
-          <position x="47.0" y="-34.0"/>
+          <position x="244.0" y="192.0"/>
           <dimension x="40.0" y="40.0"/>
           <line shape="line" color="#b0b0b0" width="1.0"/>
           <fill color="#ffffff"/>
@@ -770,17 +810,61 @@
       <arc id="a21" source="pzirt" target="t8">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="240.0" y="44.0"/>
-          <position x="240.0" y="-27.0"/>
-          <position x="130.0" y="-27.0"/>
+          <position x="302.0" y="81.0"/>
+          <position x="254.0" y="172.0"/>
         </graphics>
       </arc>
       <arc id="a22" source="t8" target="p3">
         <graphics>
           <line shape="line" color="#b0b0b0" width="1.0"/>
-          <position x="56.0" y="-30.0"/>
-          <position x="56.0" y="256.0"/>
-          <position x="152.0" y="256.0"/>
+          <position x="252.0" y="196.0"/>
+          <position x="252.0" y="208.0"/>
+        </graphics>
+      </arc>
+      <place id="p11">
+        <graphics>
+          <position x="20.0" y="148.0"/>
+          <dimension x="40.0" y="40.0"/>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <fill color="#ffffff"/>
+        </graphics>
+        <placetype>
+          <text>START</text>
+        </placetype>
+      </place>
+      <transition id="t9">
+        <name>
+          <graphics>
+            <offset x="-4.0" y="-40.0"/>
+          </graphics>
+          <text>Besøg hjemmeside</text>
+        </name>
+        <graphics>
+          <position x="24.0" y="64.0"/>
+          <dimension x="40.0" y="40.0"/>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <fill color="#ffffff"/>
+        </graphics>
+      </transition>
+      <arc id="a23" source="p11" target="t9">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="18.0" y="128.0"/>
+          <position x="18.0" y="44.0"/>
+        </graphics>
+      </arc>
+      <arc id="a24" source="t9" target="p1">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="34.0" y="73.0"/>
+          <position x="96.0" y="56.0"/>
+        </graphics>
+      </arc>
+      <arc id="a25" source="t1" target="pzirt">
+        <graphics>
+          <line shape="line" color="#b0b0b0" width="1.0"/>
+          <position x="198.0" y="65.0"/>
+          <position x="278.0" y="65.0"/>
         </graphics>
       </arc>
     </page>
