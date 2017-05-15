@@ -51,7 +51,7 @@ public class YAWLArcFigure extends ArcFigure {
 		} else if (arcType == AType.RESET){
 			this.setTargetDecoration(new DoubleArrowHeadDecoration());
 			this.setSourceDecoration(null);
-			this.setLineStyle(SWT.LINE_SOLID);
+			this.setLineStyle(SWT.LINE_DASH);
 		}
 	}
 }

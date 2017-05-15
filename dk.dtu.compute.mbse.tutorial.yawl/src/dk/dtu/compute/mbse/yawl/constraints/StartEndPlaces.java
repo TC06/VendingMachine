@@ -26,8 +26,6 @@ public class StartEndPlaces extends AbstractModelConstraint {
 
 	public IStatus validate(IValidationContext ctx) {
 		EObject object = ctx.getTarget();
-
-		// TODO YAWLNet must refer to your java class for YAWL nets
 		if (object instanceof YAWLNet) {
 			EObject container = object.eContainer();
 			if (container instanceof PetriNet) {
@@ -37,8 +35,6 @@ public class StartEndPlaces extends AbstractModelConstraint {
 				while (iterator.hasNext()) {
 					EObject content = iterator.next();
 
-					// TODO count number of places that are start places
-					// and number of places that are end places
 					if (content instanceof Place) {
 						Place condition = (Place) content;
 						PType type = YAWLFunctions.getPlaceType(condition);
@@ -56,13 +52,10 @@ public class StartEndPlaces extends AbstractModelConstraint {
 					}
 				}
 				if (startCount != 1 || endCount != 1) {
-					// if there is not exactly one start place and exactly one
-					// end place, return a failure status.
 					return ctx.createFailureStatus(new Object[] { container });
 				}
 			}
 		}
-		// otherwise return a success status
 		return ctx.createSuccessStatus();
 	}
 
