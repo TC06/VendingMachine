@@ -18,7 +18,6 @@ package dk.dtu.compute.mbse.yawl;
  * @see mbse.yawl.YawlPackage#getPlace()
  * @model
  * @generated
- * @author Tolga
  */
 public interface Arc extends org.pnml.tools.epnk.pnmlcoremodel.Arc {
 	/**
