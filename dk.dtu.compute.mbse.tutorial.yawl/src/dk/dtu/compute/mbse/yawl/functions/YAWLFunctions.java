@@ -73,7 +73,6 @@ public class YAWLFunctions {
 				switch (type.getText()) {
 				case OR:
 					types[0] = TType.OR;
-					
 					break;
 				case XOR:
 					types[0] = TType.XOR;
@@ -88,21 +87,4 @@ public class YAWLFunctions {
 		} else
 			return types;
 	}
-
-	/*
-	 * public static getJoinType(Transition transition) { FlatAccess flat =
-	 * FlatAccess.getFlatAccess(NetFunctions.getPetriNet(transition));
-	 * if(transition instanceof Action && flat != null) { int count = 0; for(Arc
-	 * a: flat.getIn(action)) { if(a instanceof dk.dtu.compute.mbse.yawl.Arc) {
-	 * dk.dtu.compute.mbse.yawl.Arc arc = (dk.dtu.compute.mbse.yawl.Arc) a;
-	 * if(arc.getArctype() == null ||
-	 * arc.getArctype().getText().equals(AType.NORMAL)) { count++; } } }
-	 * if(count > 1) { TransitionType joinType = action.getJoinType();
-	 * if(joinType != null) { if(joinType.getText().equals(TT ype.XOR)) { return
-	 * ControlFlowType.XOR; } else if(joinType.getText().equals(TType.OR)) {
-	 * return ControlFlowType.OR; } } return ControlFlowType.AND; } else
-	 * if(count == 1) { return ControlFlowType.SINGLE; } } return
-	 * ControlFlowType.NULL; }
-	 */
-
 }
