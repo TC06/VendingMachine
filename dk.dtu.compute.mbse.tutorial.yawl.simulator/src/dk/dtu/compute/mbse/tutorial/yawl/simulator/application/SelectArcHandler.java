@@ -12,7 +12,6 @@ import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
 import dk.dtu.compute.mbse.yawl.TType;
 import dk.dtu.compute.mbse.yawl.Transition;
 import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
-import dk.dtu.compute.mbse.yawl.helpers.TransitionHelper;
 
 /**
  * Action handler dealing with clicks on InvolvedArc annotations. It

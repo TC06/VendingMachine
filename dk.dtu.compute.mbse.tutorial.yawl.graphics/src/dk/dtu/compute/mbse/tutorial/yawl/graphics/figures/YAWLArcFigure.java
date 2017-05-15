@@ -49,7 +49,7 @@ public class YAWLArcFigure extends ArcFigure {
 			this.setSourceDecoration(null);
 			this.setLineStyle(SWT.LINE_SOLID);
 		} else if (arcType == AType.RESET){
-			this.setTargetDecoration(new DoubleArrowHeadDecoration());
+			this.setTargetDecoration(new ArrowHeadDecoration());
 			this.setSourceDecoration(null);
 			this.setLineStyle(SWT.LINE_DASH);
 		}
