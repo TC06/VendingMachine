@@ -20,7 +20,7 @@ import dk.dtu.compute.mbse.tutorial.yawl.simulator.yawlannotations.SelectArc;
  * in the simulator. These are the involved arcs and the enabled transitions.
  * Markings will properly be shown by the default presentation handlers.
  * 
- * @author Tolga
+ * @author s153403 - Umais Usman Shoaib, s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
  *
  */
 public class YAWLAnnotationsPresentationHandler implements IPresentationHandler {

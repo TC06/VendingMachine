@@ -20,10 +20,7 @@ import dk.dtu.compute.mbse.yawl.Transition;
 
 
 /**
- * Action handler dealing with mouse clicks on EnableTransition annotations.
- * It will fire the transition, if it is enabled.
- * 
- * @author Tolga
+ * @author s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
  *
  */
 public class EnabledTransitionHandler implements IActionHandler {

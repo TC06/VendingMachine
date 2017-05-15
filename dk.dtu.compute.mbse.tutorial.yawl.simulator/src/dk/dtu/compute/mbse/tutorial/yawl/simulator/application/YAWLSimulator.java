@@ -30,7 +30,6 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * into account; neither does it take reset arcs into account. Moreover,
  * the user can not select arcs yet. This needs to be extended!
  * 
- * @author Tolga
  *
  */
 public class YAWLSimulator extends ApplicationWithUIManager {
@@ -67,8 +66,7 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 	}
 
 	/**
-	 * @author Tolga
-	 * @return
+	 * @author s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
 	 */
 	private NetMarking computeInitialMarking() {
 		NetMarking marking = new NetMarking();
@@ -85,8 +83,7 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 	}
 
 	/**
-	 * @author Tolga
-	 * @return
+	 * @author s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
 	 */
 	private NetMarking computeMarking() {
 		NetMarking marking = new NetMarking();
@@ -112,9 +109,7 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 	}
 
 	/**
-	 * @author Tolga
-	 * @param marking
-	 * @return
+	 * @author s153403 - Umais Usman Shoaib, s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
 	 */
 	private NetAnnotation computeAnnotation(NetMarking marking) {
 		NetAnnotation annotation = NetannotationsFactory.eINSTANCE.createNetAnnotation();
@@ -173,9 +168,7 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 	}
 
 	/**
-	 * @author Tolga
-	 * @param transition
-	 * @return
+	 * @author s150366 - Harun Abd Ullah, s136504 - Haydar Tas
 	 */
 	boolean fireTransition(Transition transition) {
 		NetMarking marking1 = this.computeMarking();
@@ -209,11 +202,17 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 		return marking2;
 	}
 
+	/**
+	 * @author s153403 - Umais Usman Shoaib
+	 */
 	private boolean isEnabled(NetMarking marking, Transition transition) {
 		NetMarking consumes = consumes(transition);
 		return marking.isGreaterOrEqual(consumes);
 	}
 
+	/**
+	 * @author s133959 - Tolga Cetin, s150366 - Harun Abd Ullah
+	 */
 	private NetMarking consumes(Transition transition) {
 		NetMarking consumes = new NetMarking();
 
@@ -236,6 +235,9 @@ public class YAWLSimulator extends ApplicationWithUIManager {
 		return consumes;
 	}
 
+	/**
+	 * @author s153403 - Umais Usman Shoaib, s136504 - Haydar Tas
+	 */
 	private NetMarking produces(Transition transition) {
 		NetMarking produces = new NetMarking();
 		for (org.pnml.tools.epnk.pnmlcoremodel.Arc arc: getFlatAccess().getOut(transition)) {

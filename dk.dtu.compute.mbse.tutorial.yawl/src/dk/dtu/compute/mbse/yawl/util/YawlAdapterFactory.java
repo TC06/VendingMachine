@@ -72,7 +72,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	protected YawlSwitch<Adapter> modelSwitch =
 		new YawlSwitch<Adapter>() {
@@ -219,7 +218,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see dk.dtu.compute.mbse.yawl.Place
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createArcAdapter() {
 		return null;
@@ -234,7 +232,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see dk.dtu.compute.mbse.yawl.PlaceType
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createArcTypeAdapter() {
 		return null;
@@ -249,7 +246,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see dk.dtu.compute.mbse.yawl.Place
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createTransitionAdapter() {
 		return null;
@@ -264,7 +260,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see dk.dtu.compute.mbse.yawl.PlaceType
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createTransitionTypeAdapter() {
 		return null;
@@ -349,7 +344,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see org.pnml.tools.epnk.pnmlcoremodel.PlaceNode
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createTransitionNodeAdapter() {
 		return null;
@@ -378,7 +372,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see org.pnml.tools.epnk.pnmlcoremodel.Place
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createPnmlcoremodel_TransitionAdapter() {
 		return null;
@@ -393,7 +386,6 @@ public class YawlAdapterFactory extends AdapterFactoryImpl {
 	 * @return the new adapter.
 	 * @see org.pnml.tools.epnk.pnmlcoremodel.Place
 	 * @generated
-	 * @author Tolga
 	 */
 	public Adapter createPnmlcoremodel_ArcAdapter() {
 		return null;

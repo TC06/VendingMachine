@@ -37,6 +37,9 @@ public class YAWLTransitionFigure extends TransitionFigure {
 		}
 	}
 
+	/**
+	 * @author s133959 - Tolga Cetin, s153403 - Umais Usman Shoaib
+	 */
 	@Override
 	protected void fillShape(Graphics graphics) {
 		super.fillShape(graphics);

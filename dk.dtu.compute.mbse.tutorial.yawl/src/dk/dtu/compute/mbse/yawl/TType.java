@@ -8,13 +8,12 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>PType</b></em>',
+ * A representation of the literals of the enumeration '<em><b>TType</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see mbse.yawl.YawlPackage#getPType()
+ * @see mbse.yawl.YawlPackage#getTType()
  * @model
  * @generated
- * @author Tolga
  */
 public enum TType implements Enumerator {
 
@@ -119,7 +118,7 @@ public enum TType implements Enumerator {
 	public static final int XOR_VALUE = 3;
 
 	/**
-	 * An array of all the '<em><b>PType</b></em>' enumerators.
+	 * An array of all the '<em><b>TType</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -141,7 +140,7 @@ public enum TType implements Enumerator {
 	public static final List<TType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>PType</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>TType</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
@@ -159,7 +158,7 @@ public enum TType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>PType</b></em>' literal with the specified name.
+	 * Returns the '<em><b>TType</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
@@ -177,7 +176,7 @@ public enum TType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>PType</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>TType</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.

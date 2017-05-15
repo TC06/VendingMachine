@@ -13,11 +13,7 @@ import dk.dtu.compute.mbse.yawl.Arc;
 import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
 
 /**
- * This is a constraint saying that a YAWL net should have exactly one start
- * place and one end place.
- *
- * @author Harun s150366
- * @generated NOT
+ * @author s153403 - Umais Usman Shoaib
  */
 public class NoDuplicateArcs extends AbstractModelConstraint {
 	public IStatus validate(IValidationContext ctx) {

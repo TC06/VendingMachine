@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * An implementation of the model <b>Factory</b>.
  * <!-- end-user-doc -->
  * @generated
- * @author Tolga
  */
 public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	/**
@@ -54,7 +53,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	@Override
 	public EObject create(EClass eClass) {
@@ -75,7 +73,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
@@ -95,7 +92,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
@@ -165,7 +161,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public Arc createArc() {
 		ArcImpl arc = new ArcImpl();
@@ -176,7 +171,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public ArcType createArcType() {
 		ArcTypeImpl arcType = new ArcTypeImpl();
@@ -187,7 +181,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public AType createATypeFromString(EDataType eDataType, String initialValue) {
 		AType result = AType.get(initialValue);
@@ -199,7 +192,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public String convertATypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
@@ -209,7 +201,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public Transition createTransition() {
 		TransitionImpl transition = new TransitionImpl();
@@ -220,7 +211,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public TransitionType createTransitionType() {
 		TransitionTypeImpl transitionType = new TransitionTypeImpl();
@@ -231,7 +221,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public TType createTTypeFromString(EDataType eDataType, String initialValue) {
 		TType result = TType.get(initialValue);
@@ -243,7 +232,6 @@ public class YawlFactoryImpl extends EFactoryImpl implements YawlFactory {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public String convertTTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();

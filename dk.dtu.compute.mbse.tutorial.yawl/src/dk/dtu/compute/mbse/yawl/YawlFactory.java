@@ -49,42 +49,38 @@ public interface YawlFactory extends EFactory {
 	PlaceType createPlaceType();
 	
 	/**
-	 * Returns a new object of class '<em>Place</em>'.
+	 * Returns a new object of class '<em>Arc</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
+	 * @return a new object of class '<em>Arc</em>'.
 	 * @generated
-	 * @author Tolga
 	 */
 	Arc createArc();
 
 	/**
-	 * Returns a new object of class '<em>Place Type</em>'.
+	 * Returns a new object of class '<em>Arc Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place Type</em>'.
+	 * @return a new object of class '<em>Arc Type</em>'.
 	 * @generated
-	 * @author Tolga
 	 */
 	ArcType createArcType();
 	
 	/**
-	 * Returns a new object of class '<em>Place</em>'.
+	 * Returns a new object of class '<em>Arc</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
+	 * @return a new object of class '<em>Arc</em>'.
 	 * @generated
-	 * @author Tolga
 	 */
 	Transition createTransition();
 
 	/**
-	 * Returns a new object of class '<em>Place Type</em>'.
+	 * Returns a new object of class '<em>Arc Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place Type</em>'.
+	 * @return a new object of class '<em>Arc Type</em>'.
 	 * @generated
-	 * @author Tolga
 	 */
 	TransitionType createTransitionType();
 

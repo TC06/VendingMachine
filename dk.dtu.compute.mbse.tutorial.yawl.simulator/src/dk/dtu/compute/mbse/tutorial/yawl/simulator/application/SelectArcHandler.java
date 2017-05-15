@@ -18,7 +18,7 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * will toggle the active status of the arc and update the enabledness
  * status of the attached transition.
  * 
- * @author Tolga
+ * @author s153403 - Umais Usman Shoaib, s133959 - Tolga Cetin, s150366 - Harun Abd Ullah, s136504 - Haydar Tas
  *
  */
 public class SelectArcHandler implements IActionHandler {

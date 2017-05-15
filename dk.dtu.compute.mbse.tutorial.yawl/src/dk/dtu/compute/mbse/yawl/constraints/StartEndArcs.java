@@ -13,14 +13,8 @@ import dk.dtu.compute.mbse.yawl.Place;
 import dk.dtu.compute.mbse.yawl.YAWLNet;
 import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
 
-// imports missing
-
 /**
- * This is a constraint saying that a YAWL net should have exactly one start
- * place and one end place.
- *
- * @author Harun s150366
- * @generated NOT
+ * @author s133959 - Tolga Cetin
  */
 public class StartEndArcs extends AbstractModelConstraint {
 

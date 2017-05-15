@@ -14,21 +14,20 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Arc</b></em>'.
+ * An implementation of the model object '<em><b>Transition</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link mbse.yawl.impl.ArcImpl#getArctype <em>Arctype</em>}</li>
+ *   <li>{@link mbse.yawl.impl.TransitionImpl#getTransitiontype <em>Transitiontype</em>}</li>
  * </ul>
  *
  * @generated
- * @author Tolga
  */
 public class TransitionImpl extends org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl implements Transition {
 	/**
-	 * The cached value of the '{@link #getPlacetype() <em>Arctype</em>}' containment reference.
+	 * The cached value of the '{@link #getTransitiontype() <em>Transitiontype</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPlacetype()
@@ -38,10 +37,10 @@ public class TransitionImpl extends org.pnml.tools.epnk.pnmlcoremodel.impl.Trans
 	protected TransitionType splitType;
 	
 	/**
-	 * The cached value of the '{@link #getPlacetype() <em>Arctype</em>}' containment reference.
+	 * The cached value of the '{@link #getTransitiontype() <em>Transitiontype</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlacetype()
+	 * @see #getTransitiontype()
 	 * @generated
 	 * @ordered
 	 */
@@ -235,4 +234,4 @@ public class TransitionImpl extends org.pnml.tools.epnk.pnmlcoremodel.impl.Trans
 		}
 		return super.eIsSet(featureID);
 	}
-} //PlaceImpl
+} //TransitionImpl

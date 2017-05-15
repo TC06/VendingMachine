@@ -64,7 +64,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EClass arcEClass = null;
 
@@ -72,7 +71,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EClass arcTypeEClass = null;
 
@@ -80,7 +78,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EEnum aTypeEEnum = null;
 
@@ -88,7 +85,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EClass transitionEClass = null;
 
@@ -96,7 +92,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EClass transitionTypeEClass = null;
 
@@ -104,7 +99,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	private EEnum tTypeEEnum = null;
 
@@ -230,7 +224,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EClass getArc() {
 		return arcEClass;
@@ -240,7 +233,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EReference getArc_Arctype() {
 		return (EReference)arcEClass.getEStructuralFeatures().get(0);
@@ -250,7 +242,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EClass getArcType() {
 		return arcTypeEClass;
@@ -260,7 +251,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EAttribute getArcType_Text() {
 		return (EAttribute)arcTypeEClass.getEStructuralFeatures().get(0);
@@ -270,7 +260,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EEnum getAType() {
 		return aTypeEEnum;
@@ -280,7 +269,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EClass getTransition() {
 		return transitionEClass;
@@ -290,23 +278,16 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EClass getTransitionType() {
 		return transitionTypeEClass;
 	}
 	
-	/**
-	 * @author Tolga
-	 */
 	@Override
 	public EReference getTransition_SplitType() {
 		return (EReference)transitionEClass.getEStructuralFeatures().get(0);
 	}
 
-	/**
-	 * @author Tolga
-	 */
 	@Override
 	public EReference getTransition_JoinType() {
 		return (EReference)transitionEClass.getEStructuralFeatures().get(1);
@@ -316,7 +297,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EAttribute getTransitionType_Text() {
 		return (EAttribute)transitionTypeEClass.getEStructuralFeatures().get(0);
@@ -326,7 +306,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public EEnum getTType() {
 		return tTypeEEnum;
@@ -354,7 +333,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public void createPackageContents() {
 		if (isCreated) return;
@@ -405,7 +383,6 @@ public class YawlPackageImpl extends EPackageImpl implements YawlPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
-	 * @author Tolga
 	 */
 	public void initializePackageContents() {
 		if (isInitialized) return;

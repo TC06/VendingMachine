@@ -24,7 +24,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </ul>
  *
  * @generated
- * @author Tolga
  */
 public class ArcImpl extends org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl implements Arc {
 	/**
@@ -170,4 +169,4 @@ public class ArcImpl extends org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl impl
 		}
 		return super.eIsSet(featureID);
 	}
-} //PlaceImpl
+} //ArcImpl

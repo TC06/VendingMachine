@@ -17,7 +17,6 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
  * left or ride side of the transition if the transition does not have NORMAL
  * incoming or outgoing arcs.
  * 
- * @author ekki@dtu.dk
  * 
  */
 public class YAWLPlaceFigure extends PlaceFigure {
@@ -45,6 +44,9 @@ public class YAWLPlaceFigure extends PlaceFigure {
 		}
 	}
 
+	/**
+	 * @author s133959 - Tolga Cetin
+	 */
 	@Override
 	protected void fillShape(Graphics graphics) {
 		super.fillShape(graphics);

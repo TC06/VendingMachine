@@ -16,17 +16,16 @@ import org.pnml.tools.epnk.pnmlcoremodel.impl.AttributeImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Place Type</b></em>'.
+ * An implementation of the model object '<em><b>Arc Type</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link mbse.yawl.impl.PlaceTypeImpl#getText <em>Text</em>}</li>
+ *   <li>{@link mbse.yawl.impl.ArcTypeImpl#getText <em>Text</em>}</li>
  * </ul>
  *
  * @generated
- * @author Tolga
  */
 public class ArcTypeImpl extends AttributeImpl implements ArcType {
 	/**

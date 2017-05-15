@@ -5,7 +5,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.swt.SWT;
 import org.pnml.tools.epnk.gmf.extensions.graphics.decorations.ArrowHeadDecoration;
-import org.pnml.tools.epnk.gmf.extensions.graphics.decorations.DoubleArrowHeadDecoration;
 import org.pnml.tools.epnk.gmf.extensions.graphics.figures.ArcFigure;
 import org.pnml.tools.epnk.pnmlcoremodel.Arc;
 import org.pnml.tools.epnk.pnmlcoremodel.Node;
@@ -15,7 +14,7 @@ import dk.dtu.compute.mbse.yawl.functions.YAWLFunctions;
 
 /**
  * 
- * @author Umais s153403
+ * @author s153403 - Umais Usman Shoaib
  * 
  */
 public class YAWLArcFigure extends ArcFigure {
