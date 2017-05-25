@@ -74,7 +74,7 @@ public class SelectArcHandler implements IActionHandler {
 				return true;
 			}
 		}
-		return false;
+		return false;}
 
 	@Override
 	public boolean mouseReleased(MouseEvent arg0, ObjectAnnotation annotation) {
